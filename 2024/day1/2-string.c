@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+// 2.c but it uses string.h
 
 int similarity_score(FILE *file);
 short *generate_map(FILE *file);
