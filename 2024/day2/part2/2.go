@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"slices"
 	"strconv"
 	"strings"
 )
@@ -18,8 +19,9 @@ func main() {
 func checkSafety(reports []string) int {
 	safety_level := 0
 
+	reports = reports[:len(reports)-1]
 	for _, v := range reports {
-		if checkReport(strings.Split(v, " ")) == true {
+		if spamReports(strings.Split(v, " ")) == true {
 			safety_level++
 			fmt.Println("safe!")
 		} else {
@@ -30,10 +32,21 @@ func checkSafety(reports []string) int {
 	return safety_level
 }
 
+func spamReports(codes []string) bool {
+	fmt.Printf("Starting %s\n", codes)
+	for i := 0; i < len(codes); i++ {
+		try := slices.Concat(codes[:i], codes[i+1:])
+		fmt.Printf("Index: %d From: %s -> Trying: %s\n", i, codes, try)
+		if checkReport(try) == true {
+			return true
+		}
+	}
+	return false
+}
+
 func checkReport(codes []string) bool {
 	previous_report := 0
 	previous_previous_report := 0
-	dampener_status := false
 
 	for i := 0; i < len(codes); i++ {
 		report, err := strconv.Atoi(codes[i])
@@ -57,31 +70,10 @@ func checkReport(codes []string) bool {
 
 		previous_safetiness := previous_previous_report - previous_report
 		safetiness := previous_report - report
-		if abs(previous_safetiness) < 1 || abs(previous_safetiness) > 3 {
-			if dampener_status == true {
-				return false
-			} else {
-				previous_report = report
-				fmt.Println("king crimson!!1")
-				dampener_status = true
-				continue
-			}
-		} else if abs(safetiness) < 1 || abs(safetiness) > 3 {
-			if dampener_status == true {
-				return false
-			} else {
-				fmt.Println("king crimson!!2")
-				dampener_status = true
-				continue
-			}
-		} else if !sameSignCheck(previous_safetiness, safetiness) {
-			if dampener_status == true {
-				return false
-			} else {
-				fmt.Println("king crimson!!3")
-				dampener_status = true
-				continue
-			}
+		if abs(previous_safetiness) < 1 || abs(previous_safetiness) > 3 || abs(safetiness) < 1 ||
+			abs(safetiness) > 3 ||
+			!sameSignCheck(previous_safetiness, safetiness) {
+			return false
 		}
 
 		previous_previous_report = previous_report
