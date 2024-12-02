@@ -1,0 +1,49 @@
+* Advent of Code 2024
+To be quirky I decided to scramble through a bunch of random programming languages that I want to learn/master and use a different one every day of advent of code.
+
+My list so far
+- Heavily used languages
+  1. C
+  2. C++
+  3. Python
+  4. JavaScript w/ JSDoc
+  5. TypeScript
+  6. PHP
+     - probably only with Laravel when im actually gonna use it for webdev
+  7. Java
+  8. C#
+  9. Go
+  10. Ruby
+- Mediumly known, hipster languages
+  1. Dart
+  2. Swift
+  3. Scala
+  4. Kotlin
+  5. Lua
+  6. Rust
+  7. Solidity
+- Lesser known but promising languages
+  1. Elixir
+  2. Zig
+  3. Clojure
+  4. Haskell
+  5. Nim
+  6. Gleam
+  7. Julia
+- Lesser known legacy languages
+  1. Delphi Open Pascal
+  2. Perl
+  3. Smalltalk
+  4. Fortran
+  5. Erlang
+  6. COBOL
+  7. R
+  8. Groovy
+- Incomplete Langauges (takes longer to understand)
+  1. Assembly
+  2. Bash
+  3. SQL
+- (relatively) Esoteric languages
+  1. Forth
+  2. Factor
+  3. Prolog
