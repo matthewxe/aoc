@@ -1,4 +1,0 @@
-use (
-	./part1/1.go
-	./part2/2.go
-)

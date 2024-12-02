@@ -1,4 +1,4 @@
-package part2
+package main
 
 import (
 	"fmt"
@@ -6,6 +6,14 @@ import (
 	"strconv"
 	"strings"
 )
+
+func main() {
+	dat, err := os.ReadFile(os.Args[1])
+	if err != nil {
+		return
+	}
+	fmt.Printf("%d\n", checkSafety(strings.Split(string(dat), "\n")))
+}
 
 func checkSafety(reports []string) int {
 	safety_level := 0
