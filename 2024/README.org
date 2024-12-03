@@ -1,7 +1,20 @@
 * Advent of Code 2024
 To be quirky I decided to scramble through a bunch of random programming languages that I want to learn/master and use a different one every day of advent of code.
 
-My list so far
+The ones ive used
+** Day 1 - C
+Its something I've used before
+** Day 2 - Go
+I've also used go before so nothing new
+** Day 3 - C#
+*** Installation Process
+Running C# code seems to require installing the dotnet sdk which i install very chaddly with nixos and write my first hello world code
+*** General thoughts
+You use the dotnet binary
+https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates
+- apparently a new change just appeared in C# when it went to .NET 6 removing the main method from the default template, kinda weird and it seems recent so im gonna use the old template for now
+- setting up the lsp was kinda easy
+** My list of languages to randomize in
 - Heavily used languages
   1. C
   2. C++

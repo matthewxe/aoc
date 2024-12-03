@@ -1,0 +1,14 @@
+/home/gravity/Code/aoc/2024/day3/bin/Debug/net8.0/aoc2024-day3
+/home/gravity/Code/aoc/2024/day3/bin/Debug/net8.0/aoc2024-day3.deps.json
+/home/gravity/Code/aoc/2024/day3/bin/Debug/net8.0/aoc2024-day3.runtimeconfig.json
+/home/gravity/Code/aoc/2024/day3/bin/Debug/net8.0/aoc2024-day3.dll
+/home/gravity/Code/aoc/2024/day3/bin/Debug/net8.0/aoc2024-day3.pdb
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/aoc2024-day3.GeneratedMSBuildEditorConfig.editorconfig
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/aoc2024-day3.AssemblyInfoInputs.cache
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/aoc2024-day3.AssemblyInfo.cs
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/aoc2024-day3.csproj.CoreCompileInputs.cache
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/aoc2024-day3.dll
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/refint/aoc2024-day3.dll
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/aoc2024-day3.pdb
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/aoc2024-day3.genruntimeconfig.cache
+/home/gravity/Code/aoc/2024/day3/obj/Debug/net8.0/ref/aoc2024-day3.dll
