@@ -6,7 +6,6 @@ class Program
     {
         Enabled,
         Disabled,
-        Meh,
     }
     static void Main(string[] args)
     {
@@ -17,9 +16,18 @@ class Program
         }
         string memory = File.ReadAllText(args[0]);
 
-        int total = 0;
-        States state = States.Enabled;
+        // Part 1
+        int part1Total = 0;
+        for (int i = 0; i < memory.Length; i++)
+        {
+            char c = memory[i];
+            if (memory[i] == 'm')
+                part1Total += mult(memory[i..memory.Length]);
+        }
 
+        // Part 2
+        int part2Total = 0;
+        States state = States.Enabled;
         for (int i = 0; i < memory.Length; i++)
         {
             char c = memory[i];
@@ -29,27 +37,24 @@ class Program
                     switch (c)
                     {
                         case 'd':
-                            state = dornt(memory[i..memory.Length], state);
+                            state = doCheck(memory[i..memory.Length], state);
                             break;
                         case 'm':
-                            total += mult(memory[i..memory.Length]);
+                            part2Total += mult(memory[i..memory.Length]);
                             break;
                     }
                     break;
                 case States.Disabled:
                     if (c == 'd')
                     {
-                        state = dornt(memory[i..memory.Length], state);
+                        state = doCheck(memory[i..memory.Length], state);
                     }
                     break;
             }
-            if (c == 'm')
-            {
-            }
         }
-        Console.WriteLine(total);
+        Console.WriteLine($"Part 1: {part1Total}\nPart 2: {part2Total}");
     }
-    static States dornt(string memory, States current)
+    static States doCheck(string memory, States current)
     {
         string symbolDo = "do()";
         string symbolDont = "don't()";
@@ -112,13 +117,6 @@ class Program
                 case 5:
                     if (c == ')')
                     {
-                        // state = 0;
-                        // int multed = num1 * num2;
-                        // Console.WriteLine(string1);
-                        // Console.WriteLine(string2);
-                        // Console.WriteLine("Multed: ", multed);
-                        // string1 = "";
-                        // string2 = "";
                         return num1 * num2;
                     }
                     string2 += c;

@@ -14,6 +14,13 @@ You use the dotnet binary
 https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates
 - apparently a new change just appeared in C# when it went to .NET 6 removing the main method from the default template, kinda weird and it seems recent so im gonna use the old template for now
 - setting up the lsp was kinda easy
+- wow i did not expect it to be that fast, I completed both parts in just 1 hour while I never touched C# before
+- i think i barely scratched the surface of what C# has to offer, the only features i dabbled in to are
+  1. file reading
+  2. enums (first time i have used them but i have heard of them before)
+  3. writing new methods in a class
+  4. Subranges (i used them like go slices)
+  5. methods in types (uncommon for me cause the languages i mainly use are go and C and those dont have these OOP concepts of types)
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
