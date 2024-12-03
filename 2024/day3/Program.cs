@@ -23,7 +23,7 @@ class Program
         for (int i = 0; i < memory.Length; i++)
         {
             if (memory[i] == 'm')
-                part1Total += mult(memory[i..memory.Length]);
+                part1Total += mul(memory[i..]);
         }
 
         // Part 2
@@ -34,13 +34,11 @@ class Program
             switch (memory[i])
             {
                 case 'd':
-                    doCheck(memory[i..(i + 7)], ref state);
+                    doCheck(memory[i..], ref state);
                     break;
                 case 'm':
                     if (state == States.Enabled)
-                    {
-                        part2Total += mult(memory[i..memory.Length]);
-                    }
+                        part2Total += mul(memory);
                     break;
             }
         }
@@ -48,16 +46,16 @@ class Program
     }
     static void doCheck(string memory, ref States current)
     {
-        if (DoSymbol.Equals(memory[..(DoSymbol.Length)]) == true)
+        if (DoSymbol.Equals(memory[..DoSymbol.Length]) == true)
         {
             current = States.Enabled;
         }
-        else if (DontSymbol.Equals(memory[..(DontSymbol.Length)]) == true)
+        else if (DontSymbol.Equals(memory[..DontSymbol.Length]) == true)
         {
             current = States.Disabled;
         }
     }
-    static int mult(string memory)
+    static int mul(string memory)
     {
         int state = 0;
         string string1 = "";
