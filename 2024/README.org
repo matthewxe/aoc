@@ -21,6 +21,9 @@ https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates
   3. writing new methods in a class
   4. Subranges (i used them like go slices)
   5. methods in types (uncommon for me cause the languages i mainly use are go and C and those dont have these OOP concepts of types)
+  6. ref and out arguments
+     - very cool feature, it allows for like pointer-like way of writing code from C, but im guessing this one is alot safer and more restrictions
+- I think I should learn more about the language first so I can write more cleaner solutions
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

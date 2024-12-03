@@ -2,6 +2,8 @@
 
 class Program
 {
+    const string DoSymbol = "do()";
+    const string DontSymbol = "don't()";
     enum States
     {
         Enabled,
@@ -11,7 +13,7 @@ class Program
     {
         if (args.Length != 1)
         {
-            Console.WriteLine("Include a single file as the input");
+            Console.WriteLine("Include a single file as the input. ex: dotnet run ./input.txt");
             return;
         }
         string memory = File.ReadAllText(args[0]);
@@ -20,7 +22,6 @@ class Program
         int part1Total = 0;
         for (int i = 0; i < memory.Length; i++)
         {
-            char c = memory[i];
             if (memory[i] == 'm')
                 part1Total += mult(memory[i..memory.Length]);
         }
@@ -30,46 +31,30 @@ class Program
         States state = States.Enabled;
         for (int i = 0; i < memory.Length; i++)
         {
-            char c = memory[i];
-            switch (state)
+            switch (memory[i])
             {
-                case States.Enabled:
-                    switch (c)
-                    {
-                        case 'd':
-                            state = doCheck(memory[i..memory.Length], state);
-                            break;
-                        case 'm':
-                            part2Total += mult(memory[i..memory.Length]);
-                            break;
-                    }
+                case 'd':
+                    doCheck(memory[i..(i + 7)], ref state);
                     break;
-                case States.Disabled:
-                    if (c == 'd')
+                case 'm':
+                    if (state == States.Enabled)
                     {
-                        state = doCheck(memory[i..memory.Length], state);
+                        part2Total += mult(memory[i..memory.Length]);
                     }
                     break;
             }
         }
         Console.WriteLine($"Part 1: {part1Total}\nPart 2: {part2Total}");
     }
-    static States doCheck(string memory, States current)
+    static void doCheck(string memory, ref States current)
     {
-        string symbolDo = "do()";
-        string symbolDont = "don't()";
-
-        if (symbolDo.Equals(memory[..(symbolDo.Length)]) == true)
+        if (DoSymbol.Equals(memory[..(DoSymbol.Length)]) == true)
         {
-            return States.Enabled;
+            current = States.Enabled;
         }
-        else if (symbolDont.Equals(memory[..(symbolDont.Length)]) == true)
+        else if (DontSymbol.Equals(memory[..(DontSymbol.Length)]) == true)
         {
-            return States.Disabled;
-        }
-        else
-        {
-            return current;
+            current = States.Disabled;
         }
     }
     static int mult(string memory)
