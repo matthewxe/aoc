@@ -37,3 +37,5 @@ S..S
 A.A.
 MM..
 XMAS
+....
+XMASXMASXMAS

@@ -2,28 +2,23 @@ args <- commandArgs(trailingOnly = TRUE)
 
 input <- read.table(args[1], sep = "\n")
 
-
-horizontal_check <- function(input, x, y, reversed = FALSE) {
-        compare <- substr(input[y, ], x, x+3)
-
-        if (reversed) {
-                check <- "SAMX"
-        }
-        else {
-                check <- "XMAS"
-        }
-        
-        if (grepl(check, compare)) {
+x_check <- function(input, x, y) {
+        if ((multi_row_check(input, x, y, mode = "diagonal", FALSE, 'MAS')
+        || multi_row_check(input, x, y, mode = "diagonal", TRUE, 'MAS'))
+        &&
+        (multi_row_check(input, x+2, y, mode = "left_diagonal", FALSE, 'MAS')
+        || multi_row_check(input, x+2, y, mode = "left_diagonal", TRUE, 'MAS'))) {
                 return (1)
+                plot(x+1, y+1)
         } else {
                 return (0)
         }
 }
 
-multi_row_check <- function(input, x, y, mode = "vertical", reversed = FALSE) {
+
+multi_row_check <- function(input, x, y, mode = "vertical", reversed = FALSE, check = "XMAS") {
         # print(sprintf("start! %i %i, mode: %s, reversed: %s", x, y, mode, reversed))
-        range <- seq(0, 3)
-        check <- "XMAS"
+        range <- seq(0, nchar(check) - 1)
         if (reversed) {
                 # print("reversed!")
                 range <- rev(range)
@@ -42,7 +37,7 @@ multi_row_check <- function(input, x, y, mode = "vertical", reversed = FALSE) {
                         stop("invalid mode. valid options: [\"vertical\", \"diagonal\", \"left_diagonal\"]")
                 }
                 if (is.na(letter)) {
-                        return (0)
+                        return (FALSE)
                 }
                 compare <- paste(compare, letter, sep= "")
         }
@@ -52,10 +47,10 @@ multi_row_check <- function(input, x, y, mode = "vertical", reversed = FALSE) {
         # print(check)
         if (compare == check) {
                 # print("correct!")
-                return (1)
+                return (TRUE)
         } else {
                 # print("wrongk!")
-                return (0)
+                return (FALSE)
         }
 }
 total <- 0
@@ -64,16 +59,8 @@ i <- 1
 while (i <= nrow(input)) {
         j <- 1
         row <- input[i, ]
-
         while (j <= nchar(row)) {
-                        total <- total + horizontal_check(input, j, i)
-                        total <- total + horizontal_check(input, j, i, TRUE)
-                        total <- total + multi_row_check(input, j, i, "vertical")
-                        total <- total + multi_row_check(input, j, i, "vertical", TRUE)
-                        total <- total + multi_row_check(input, j, i, "diagonal")
-                        total <- total + multi_row_check(input, j, i, "diagonal", TRUE)
-                        total <- total + multi_row_check(input, j, i, "left_diagonal")
-                        total <- total + multi_row_check(input, j, i, "left_diagonal", TRUE)
+                        total <- total + x_check(input, j, i)
                 j <- j + 1
         }
         i <- i + 1
