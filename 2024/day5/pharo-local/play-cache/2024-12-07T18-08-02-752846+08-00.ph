@@ -1,0 +1,1 @@
+| tonelFile |tonelFile := '/home/gravity/Code/aoc/2024/day5/shit.tonel'.TonelReader fileIn: tonelFile.    MyClass new inspect

@@ -1,0 +1,1065 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ 'Pharo12.0-SNAPSHOT-64bit-2132280c01.3290899CEBD0', '4' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpPackageTagRemoval {
+		#packageTagName : #Uncategorized,
+		#packageName : #Advent-of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #hi,
+			#protocol : #accessing,
+			#sourceCode : 'hi\r\r  ^ \'Hello World!\'',
+			#stamp : '12/7/2024 06:52',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #amount,
+			#protocol : #accessing,
+			#sourceCode : 'amount\r\r\t^ count',
+			#stamp : '12/7/2024 06:51',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'set:',
+			#protocol : #accessing,
+			#sourceCode : 'set: i\r  count := i',
+			#stamp : '12/7/2024 06:51',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpClassRemoval {
+		#classRemoved : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'AnObsoletePart1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #AnObsoletePart1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : #Advent-of-Code-Day5,
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpPackageRemoval {
+		#packageName : #Advent-of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpPackageAddition {
+		#packageName : #AdventOfCodeDay5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpPackageRename {
+		#packageName : #Advent-Of-CodeDay5,
+		#oldPackageName : #AdventOfCodeDay5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '8' ],
+		#self : OmReference [ '9' ]
+	},
+	#content : EpPackageRename {
+		#packageName : #Advent-Of-Code-Day5,
+		#oldPackageName : #Advent-Of-CodeDay5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '9' ],
+		#self : OmReference [ '10' ]
+	},
+	#content : EpPackageAddition {
+		#packageName : #AdventOfCodeDay5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '10' ],
+		#self : OmReference [ '11' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #Uncategorized,
+		#packageName : #AdventOfCodeDay5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '11' ],
+		#self : OmReference [ '12' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #MyCounter\r\tslots: {};\r\tpackage: \'AdventOfCodeDay5\''
+			},
+			#name : #MyCounter,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << MyCounter class\r\tslots: {}'
+				},
+				#name : #'MyCounter class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounter
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #AdventOfCodeDay5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '12' ],
+		#self : OmReference [ '13' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #Uncategorized,
+		#packageName : #Advent-Of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '13' ],
+		#self : OmReference [ '14' ]
+	},
+	#content : EpPackageTagRemoval {
+		#packageTagName : #Uncategorized,
+		#packageName : #AdventOfCodeDay5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '14' ],
+		#self : OmReference [ '15' ]
+	},
+	#content : EpBehaviorRepackagedChange {
+		#oldTagName : #Uncategorized,
+		#oldPackageName : #AdventOfCodeDay5,
+		#newTagName : #Uncategorized,
+		#newPackageName : #Advent-Of-Code-Day5,
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #MyCounter\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5\''
+			},
+			#name : #MyCounter,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << MyCounter class\r\tslots: {}'
+				},
+				#name : #'MyCounter class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounter
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '15' ],
+		#self : OmReference [ '16' ]
+	},
+	#content : EpPackageRemoval {
+		#packageName : #AdventOfCodeDay5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '16' ],
+		#self : OmReference [ '17' ]
+	},
+	#content : EpPackageAddition {
+		#packageName : #Advent-Of-Code-Day5-Tests
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '17' ],
+		#self : OmReference [ '18' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #Uncategorized,
+		#packageName : #Advent-Of-Code-Day5-Tests
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '18' ],
+		#self : OmReference [ '19' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #MyCounterTest\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5-Tests\''
+			},
+			#name : #MyCounterTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << MyCounterTest class\r\tslots: {}'
+				},
+				#name : #'MyCounterTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounterTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5-Tests,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '19' ],
+		#self : OmReference [ '20' ]
+	},
+	#content : EpBehaviorCommentChange {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #MyCounterTest\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5-Tests\''
+			},
+			#name : #MyCounterTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << MyCounterTest class\r\tslots: {}'
+				},
+				#name : #'MyCounterTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounterTest
+				},
+				#parent : @6,
+				#content : 'A MyCounterTest is a test class for testing the behavior of MyCounter',
+				#stamp : '<historical>'
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5-Tests,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#oldComment : '',
+		#newComment : 'A MyCounterTest is a test class for testing the behavior of MyCounter',
+		#oldStamp : '',
+		#newStamp : '<historical>'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '20' ],
+		#self : OmReference [ '21' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #MyCounterTest\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5-Tests\''
+			},
+			#name : #MyCounterTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << MyCounterTest class\r\tslots: {}'
+				},
+				#name : #'MyCounterTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounterTest
+				},
+				#parent : @6,
+				#content : 'A MyCounterTest is a test class for testing the behavior of MyCounter',
+				#stamp : '<historical>'
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5-Tests,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'basic tests'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '21' ],
+		#self : OmReference [ '22' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testCreatingMyCounter,
+			#protocol : #'basic tests',
+			#sourceCode : 'testCreatingMyCounter\r\t"A test that will check if the creation of an object MyCounter is done properly"\r\t| tmp |\r\ttmp := MyCounter new.\r\tself deny: (tmp = nil)',
+			#stamp : '12/7/2024 17:41',
+			#package : #Advent-Of-Code-Day5-Tests
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '22' ],
+		#self : OmReference [ '23' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/gravity/Code/aoc/2024/day5/Pharo.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '23' ],
+		#self : OmReference [ '24' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #MyCounterTest\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5-Tests\''
+			},
+			#name : #MyCounterTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << MyCounterTest class\r\tslots: {}'
+				},
+				#name : #'MyCounterTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounterTest
+				},
+				#parent : @6,
+				#content : 'A MyCounterTest is a test class for testing the behavior of MyCounter',
+				#stamp : '<historical>'
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5-Tests,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '24' ],
+		#self : OmReference [ '25' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testIncrementing,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testIncrementing\r\t"A test that will check if method increment is working properly. \r\tTest value 5. Expected result 6."\r\t| tmp inc |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp increment.\r\t\r\tself assert: (tmp value = 6)\r',
+			#stamp : '12/7/2024 17:43',
+			#package : #Advent-Of-Code-Day5-Tests
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '25' ],
+		#self : OmReference [ '26' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #MyCounterTest\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5-Tests\''
+			},
+			#name : #MyCounterTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << MyCounterTest class\r\tslots: {}'
+				},
+				#name : #'MyCounterTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounterTest
+				},
+				#parent : @6,
+				#content : 'A MyCounterTest is a test class for testing the behavior of MyCounter',
+				#stamp : '<historical>'
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5-Tests,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #tests
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '26' ],
+		#self : OmReference [ '27' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testIncrementing,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testIncrementing\r\t"A test that will check if method increment is working properly. \r\tTest value 5. Expected result 6."\r\t| tmp inc |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp increment.\r\t\r\tself assert: (tmp value = 6)\r',
+			#stamp : '12/7/2024 17:43',
+			#package : #Advent-Of-Code-Day5-Tests
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testIncrementing,
+			#protocol : #tests,
+			#sourceCode : 'testIncrementing\r\t"A test that will check if method increment is working properly. \r\tTest value 5. Expected result 6."\r\t| tmp inc |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp increment.\r\t\r\tself assert: (tmp value = 6)\r',
+			#stamp : '12/7/2024 17:43',
+			#package : #Advent-Of-Code-Day5-Tests
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '27' ],
+		#self : OmReference [ '28' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testIncrementing,
+			#protocol : #tests,
+			#sourceCode : 'testIncrementing\r\t"A test that will check if method increment is working properly. \r\tTest value 5. Expected result 6."\r\t| tmp inc |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp increment.\r\t\r\tself assert: (tmp value = 6)\r',
+			#stamp : '12/7/2024 17:43',
+			#package : #Advent-Of-Code-Day5-Tests
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testIncrementing,
+			#protocol : #tests,
+			#sourceCode : 'testIncrementing\r\t"A test that will check if method increment is working properly. \r\tTest value 5. Expected result 6."\r\t| tmp |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp increment.\r\t\r\tself assert: (tmp value = 6)\r',
+			#stamp : '12/7/2024 17:43',
+			#package : #Advent-Of-Code-Day5-Tests
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '28' ],
+		#self : OmReference [ '29' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #MyCounterTest\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5-Tests\''
+			},
+			#name : #MyCounterTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << MyCounterTest class\r\tslots: {}'
+				},
+				#name : #'MyCounterTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounterTest
+				},
+				#parent : @6,
+				#content : 'A MyCounterTest is a test class for testing the behavior of MyCounter',
+				#stamp : '<historical>'
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5-Tests,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '29' ],
+		#self : OmReference [ '30' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testDecrementing,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testDecrementing\r\t"A test that will check if method decrement is working properly. \r\tTest value 5. Expected result 64"\r\t| tmp |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp decrement.\r\t\r\tself assert: (tmp value = 4)\r',
+			#stamp : '12/7/2024 17:44',
+			#package : #Advent-Of-Code-Day5-Tests
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '30' ],
+		#self : OmReference [ '31' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testDecrementing,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testDecrementing\r\t"A test that will check if method decrement is working properly. \r\tTest value 5. Expected result 64"\r\t| tmp |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp decrement.\r\t\r\tself assert: (tmp value = 4)\r',
+			#stamp : '12/7/2024 17:44',
+			#package : #Advent-Of-Code-Day5-Tests
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounterTest
+			},
+			#name : #testDecrementing,
+			#protocol : #tests,
+			#sourceCode : 'testDecrementing\r\t"A test that will check if method decrement is working properly. \r\tTest value 5. Expected result 64"\r\t| tmp |\r\ttmp := MyCounter new.\r\ttmp value: 5.\r\ttmp decrement.\r\t\r\tself assert: (tmp value = 4)\r',
+			#stamp : '12/7/2024 17:44',
+			#package : #Advent-Of-Code-Day5-Tests
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '31' ],
+		#self : OmReference [ '32' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #MyCounter\r\tslots: { #value };\r\tpackage: \'Advent-Of-Code-Day5\''
+			},
+			#name : #MyCounter,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #MyCounter
+					},
+					#name : #value,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << MyCounter class\r\tslots: {}'
+				},
+				#name : #'MyCounter class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounter
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '32' ],
+		#self : OmReference [ '33' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #MyCounter\r\tslots: {};\r\tpackage: \'Advent-Of-Code-Day5\''
+			},
+			#name : #MyCounter,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << MyCounter class\r\tslots: {}'
+				},
+				#name : #'MyCounter class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounter
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #MyCounter\r\tslots: { #value };\r\tpackage: \'Advent-Of-Code-Day5\''
+			},
+			#name : #MyCounter,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #MyCounter
+					},
+					#name : #value,
+					#parent : @24
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << MyCounter class\r\tslots: {}'
+				},
+				#name : #'MyCounter class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @24
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounter
+				},
+				#parent : @24,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '33' ],
+		#self : OmReference [ '34' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #MyCounter\r\tslots: { #value };\r\tpackage: \'Advent-Of-Code-Day5\''
+			},
+			#name : #MyCounter,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #MyCounter
+					},
+					#name : #value,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << MyCounter class\r\tslots: {}'
+				},
+				#name : #'MyCounter class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #MyCounter
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-Of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #initialization
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '34' ],
+		#self : OmReference [ '35' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounter
+			},
+			#name : #value,
+			#protocol : #initialization,
+			#sourceCode : 'value\r\t^ value',
+			#stamp : '12/7/2024 17:48',
+			#package : #Advent-Of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '35' ],
+		#self : OmReference [ '36' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounter
+			},
+			#name : #'value:',
+			#protocol : #initialization,
+			#sourceCode : 'value: anInteger\r\tvalue := anInteger ',
+			#stamp : '12/7/2024 17:48',
+			#package : #Advent-Of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '36' ],
+		#self : OmReference [ '37' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounter
+			},
+			#name : #init,
+			#protocol : #initialization,
+			#sourceCode : 'init\r\t"Method for initialization. Setting variables to some default values. For example 0."\r\tvalue := 0',
+			#stamp : '12/7/2024 17:49',
+			#package : #Advent-Of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '37' ],
+		#self : OmReference [ '38' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounter
+			},
+			#name : #increment,
+			#protocol : #initialization,
+			#sourceCode : 'increment\r  "This method adds 1 to variable value."\r\tself value: (value + 1)',
+			#stamp : '12/7/2024 17:51',
+			#package : #Advent-Of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '38' ],
+		#self : OmReference [ '39' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounter
+			},
+			#name : #decrement,
+			#protocol : #initialization,
+			#sourceCode : 'decrement\r  "This method substracts 1 to variable value."\r\tself value: (value + 1)',
+			#stamp : '12/7/2024 17:51',
+			#package : #Advent-Of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '39' ],
+		#self : OmReference [ '40' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounter
+			},
+			#name : #decrement,
+			#protocol : #initialization,
+			#sourceCode : 'decrement\r  "This method substracts 1 to variable value."\r\tself value: (value + 1)',
+			#stamp : '12/7/2024 17:51',
+			#package : #Advent-Of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #MyCounter
+			},
+			#name : #decrement,
+			#protocol : #initialization,
+			#sourceCode : 'decrement\r  "This method substracts 1 to variable value."\r\tself value: (value - 1)',
+			#stamp : '12/7/2024 17:51',
+			#package : #Advent-Of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '40' ],
+		#self : OmReference [ '41' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/gravity/Code/aoc/2024/day5/Pharo.image'
+	}
+}

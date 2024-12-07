@@ -1,0 +1,13 @@
+OmEntry {
+	#tags : {
+		#timestamp : DateAndTime [ '2024-12-07T17:49:50.394368+08:00' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : 'MyCounter new.\r\rMyCounter value.'
+}OmEntry {
+	#tags : {
+		#timestamp : DateAndTime [ '2024-12-07T17:50:12.212115+08:00' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : '| j |\r\rMyCounter new.\r\rj := MyCounter value.'
+}

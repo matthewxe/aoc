@@ -1,0 +1,3681 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ 'Pharo12.0-SNAPSHOT-64bit-2132280c01.1E24843961A8', '1' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #'Hello!',
+		#packageName : #AI-Algorithms-Graph-Components
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpPackageAddition {
+		#packageName : #'Hello!'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #HelloMessage,
+		#packageName : #'Hello!'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #HelloMessage\r\tslots: {};\r\ttag: \'HelloMessage\';\r\tpackage: \'Hello!\''
+			},
+			#name : #HelloMessage,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << HelloMessage class\r\tslots: {}'
+				},
+				#name : #'HelloMessage class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #HelloMessage
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #'Hello!',
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #HelloMessage,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpPackageAddition {
+		#packageName : #Advent-of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #Uncategorized,
+		#packageName : #Advent-of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpPackageTagRemoval {
+		#packageTagName : #Uncategorized,
+		#packageName : #Advent-of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '8' ],
+		#self : OmReference [ '9' ]
+	},
+	#content : EpClassRemoval {
+		#classRemoved : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'AnObsoletePart1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #AnObsoletePart1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : #Advent-of-Code-Day5,
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '9' ],
+		#self : OmReference [ '10' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #Uncategorized,
+		#packageName : #Advent-of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '10' ],
+		#self : OmReference [ '11' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '11' ],
+		#self : OmReference [ '12' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '12' ],
+		#self : OmReference [ '13' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @24
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @24,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @24
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '13' ],
+		#self : OmReference [ '14' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '14' ],
+		#self : OmReference [ '15' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #increase,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'increase\r  count := count + 1',
+			#stamp : '12/7/2024 06:43',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '15' ],
+		#self : OmReference [ '16' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #accessing
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '16' ],
+		#self : OmReference [ '17' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #increase,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'increase\r  count := count + 1',
+			#stamp : '12/7/2024 06:43',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #increase,
+			#protocol : #accessing,
+			#sourceCode : 'increase\r  count := count + 1',
+			#stamp : '12/7/2024 06:43',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '17' ],
+		#self : OmReference [ '18' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '18' ],
+		#self : OmReference [ '19' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #amount,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'amount\r\t^ count',
+			#stamp : '12/7/2024 06:44',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '19' ],
+		#self : OmReference [ '20' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #amount,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'amount\r\t^ count',
+			#stamp : '12/7/2024 06:44',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #amount,
+			#protocol : #accessing,
+			#sourceCode : 'amount\r\t^ count',
+			#stamp : '12/7/2024 06:44',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '20' ],
+		#self : OmReference [ '21' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'increase:',
+			#protocol : #accessing,
+			#sourceCode : 'increase: i\r  count := count + i',
+			#stamp : '12/7/2024 06:45',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '21' ],
+		#self : OmReference [ '22' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #amount,
+			#protocol : #accessing,
+			#sourceCode : 'amount\r\t^ count',
+			#stamp : '12/7/2024 06:44',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #amount,
+			#protocol : #accessing,
+			#sourceCode : 'amount\r\r\t^ count',
+			#stamp : '12/7/2024 06:51',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '22' ],
+		#self : OmReference [ '23' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'set:',
+			#protocol : #accessing,
+			#sourceCode : 'set: i\r  count := i',
+			#stamp : '12/7/2024 06:51',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '23' ],
+		#self : OmReference [ '24' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'increase:',
+			#protocol : #accessing,
+			#sourceCode : 'increase: i\r  count := count + i',
+			#stamp : '12/7/2024 06:45',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '24' ],
+		#self : OmReference [ '25' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #increase,
+			#protocol : #accessing,
+			#sourceCode : 'increase\r  count := count + 1',
+			#stamp : '12/7/2024 06:43',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '25' ],
+		#self : OmReference [ '26' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #hi,
+			#protocol : #accessing,
+			#sourceCode : 'hi\r\r  ^ \'Hello World!\'',
+			#stamp : '12/7/2024 06:52',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '26' ],
+		#self : OmReference [ '27' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/gravity/Code/aoc/2024/day5/Pharo.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '27' ],
+		#self : OmReference [ '28' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '28' ],
+		#self : OmReference [ '29' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'main\r  ^ self hi.',
+			#stamp : '12/7/2024 06:57',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '29' ],
+		#self : OmReference [ '30' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'main\r  ^ self hi.',
+			#stamp : '12/7/2024 06:57',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  ^ self hi.',
+			#stamp : '12/7/2024 06:57',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '30' ],
+		#self : OmReference [ '31' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  ^ self hi.',
+			#stamp : '12/7/2024 06:57',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code/aoc/2024/day5\') parent pathString.\r\r  ^ self home',
+			#stamp : '12/7/2024 07:14',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '31' ],
+		#self : OmReference [ '32' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code/aoc/2024/day5\') parent pathString.\r\r  ^ self home',
+			#stamp : '12/7/2024 07:14',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code/aoc/2024/day5\') parent pathString.\r\r  ^ self home pathString.',
+			#stamp : '12/7/2024 07:14',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '32' ],
+		#self : OmReference [ '33' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code/aoc/2024/day5\') parent pathString.\r\r  ^ self home pathString.',
+			#stamp : '12/7/2024 07:14',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code/aoc/2024/day5\') parent pathString.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '33' ],
+		#self : OmReference [ '34' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code/aoc/2024/day5\') parent pathString.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code\') parent pathString.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '34' ],
+		#self : OmReference [ '35' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  (home / \'Code\') parent pathString.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator new home.\r  (home / \'Code\') parent pathString.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '35' ],
+		#self : OmReference [ '36' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator new home.\r  (home / \'Code\') parent pathString.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code\') directories.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '36' ],
+		#self : OmReference [ '37' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code\') directories.',
+			#stamp : '12/7/2024 07:15',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code/aoc\') directories.',
+			#stamp : '12/7/2024 07:16',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '37' ],
+		#self : OmReference [ '38' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code/aoc\') directories.',
+			#stamp : '12/7/2024 07:16',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code/aoc/2024\') directories.',
+			#stamp : '12/7/2024 07:16',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '38' ],
+		#self : OmReference [ '39' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code/aoc/2024\') directories.',
+			#stamp : '12/7/2024 07:16',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code/aoc/2024/day5\') directories.',
+			#stamp : '12/7/2024 07:16',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '39' ],
+		#self : OmReference [ '40' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home.\r  \r\r  ^ (home / \'Code/aoc/2024/day5\') directories.',
+			#stamp : '12/7/2024 07:16',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:17',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '40' ],
+		#self : OmReference [ '41' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:17',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input  |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r\t\r  input := \'example.txt\' asFileReference.\r\r  Transcript show: input exists.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:19',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '41' ],
+		#self : OmReference [ '42' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input  |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r\t\r  input := \'example.txt\' asFileReference.\r\r  Transcript show: input exists.\r\r  ^ home pathString.',
+			#stamp : '12/7/2024 07:19',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input  |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r\t\r  input := \'example.txt\' asFileReference.\r\r  ^ home input exists.',
+			#stamp : '12/7/2024 07:20',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '42' ],
+		#self : OmReference [ '43' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input  |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r\t\r  input := \'example.txt\' asFileReference.\r\r  ^ home input exists.',
+			#stamp : '12/7/2024 07:20',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input  |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r\r  ^ input exists.',
+			#stamp : '12/7/2024 07:21',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '43' ],
+		#self : OmReference [ '44' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input  |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r\r  ^ input exists.',
+			#stamp : '12/7/2024 07:21',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:21',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '44' ],
+		#self : OmReference [ '45' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:21',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile                                                     \r    ifTrue: [Transcript show: \'ifTrue\'; cr]\r    ifFalse: [Transcript show: \'ifFalse\'; cr].\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:23',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '45' ],
+		#self : OmReference [ '46' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile                                                     \r    ifTrue: [Transcript show: \'ifTrue\'; cr]\r    ifFalse: [Transcript show: \'ifFalse\'; cr].\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:23',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile                                                     \r    ifTrue: [Transcript show: \'ifTrue\'; cr]\r    ifFalse: [^ false].\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:24',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '46' ],
+		#self : OmReference [ '47' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile                                                     \r    ifTrue: [Transcript show: \'ifTrue\'; cr]\r    ifFalse: [^ false].\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:24',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'balls.txt\' asFileReference.\r  input isFile                                                     \r    ifTrue: [Transcript show: \'ifTrue\'; cr]\r    ifFalse: [^ false].\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:24',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '47' ],
+		#self : OmReference [ '48' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'balls.txt\' asFileReference.\r  input isFile                                                     \r    ifTrue: [Transcript show: \'ifTrue\'; cr]\r    ifFalse: [^ false].\r\r  ^ input isFile.',
+			#stamp : '12/7/2024 07:24',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  ^ stream next.',
+			#stamp : '12/7/2024 07:26',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '48' ],
+		#self : OmReference [ '49' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  ^ stream next.',
+			#stamp : '12/7/2024 07:26',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:27',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '49' ],
+		#self : OmReference [ '50' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #amount,
+			#protocol : #accessing,
+			#sourceCode : 'amount\r\r\t^ count',
+			#stamp : '12/7/2024 06:51',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '50' ],
+		#self : OmReference [ '51' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'set:',
+			#protocol : #accessing,
+			#sourceCode : 'set: i\r  count := i',
+			#stamp : '12/7/2024 06:51',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '51' ],
+		#self : OmReference [ '52' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '52' ],
+		#self : OmReference [ '53' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules:  stream\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:34',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '53' ],
+		#self : OmReference [ '54' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:27',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  self populateRules: stream.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:34',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '54' ],
+		#self : OmReference [ '55' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  self populateRules: stream.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:34',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  self populateRules: stream.\r\r  ^ self rules.',
+			#stamp : '12/7/2024 07:34',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '55' ],
+		#self : OmReference [ '56' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #PackageManifest,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'PackageManifest << #ManifestAdventofCodeDay5\r\tslots: {};\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #ManifestAdventofCodeDay5,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'PackageManifest class << ManifestAdventofCodeDay5 class\r\tslots: {}'
+				},
+				#name : #'ManifestAdventofCodeDay5 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #ManifestAdventofCodeDay5
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '56' ],
+		#self : OmReference [ '57' ]
+	},
+	#content : EpPackageTagAddition {
+		#packageTagName : #Manifest,
+		#packageName : #Advent-of-Code-Day5
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '57' ],
+		#self : OmReference [ '58' ]
+	},
+	#content : EpBehaviorRepackagedChange {
+		#oldTagName : #Uncategorized,
+		#oldPackageName : #Advent-of-Code-Day5,
+		#newTagName : #Manifest,
+		#newPackageName : #Advent-of-Code-Day5,
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #PackageManifest,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'PackageManifest << #ManifestAdventofCodeDay5\r\tslots: {};\r\ttag: \'Manifest\';\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #ManifestAdventofCodeDay5,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'PackageManifest class << ManifestAdventofCodeDay5 class\r\tslots: {}'
+				},
+				#name : #'ManifestAdventofCodeDay5 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #ManifestAdventofCodeDay5
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Manifest,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '58' ],
+		#self : OmReference [ '59' ]
+	},
+	#content : EpBehaviorCommentChange {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #PackageManifest,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'PackageManifest << #ManifestAdventofCodeDay5\r\tslots: {};\r\ttag: \'Manifest\';\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #ManifestAdventofCodeDay5,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'PackageManifest class << ManifestAdventofCodeDay5 class\r\tslots: {}'
+				},
+				#name : #'ManifestAdventofCodeDay5 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #ManifestAdventofCodeDay5
+				},
+				#parent : @6,
+				#content : 'Please describe the package using the class comment of the included manifest class. The manifest class also includes other additional metadata for the package. These meta data are used by other tools such as the SmalllintManifestChecker and the critics Browser',
+				#stamp : '<historical>'
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Manifest,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#oldComment : '',
+		#newComment : 'Please describe the package using the class comment of the included manifest class. The manifest class also includes other additional metadata for the package. These meta data are used by other tools such as the SmalllintManifestChecker and the critics Browser',
+		#oldStamp : '',
+		#newStamp : '<historical>'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '59' ],
+		#self : OmReference [ '60' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGMetaclassDefinition {
+			#annotations : IdentityDictionary {
+				#traitCompositionSource : '{}',
+				#definitionSource : 'PackageManifest class << ManifestAdventofCodeDay5 class\r\tslots: {}'
+			},
+			#name : #'ManifestAdventofCodeDay5 class',
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#baseClass : RGClassDefinition {
+				#annotations : IdentityDictionary {
+					#superclassName : #PackageManifest,
+					#traitCompositionSource : '{}',
+					#definitionSource : 'PackageManifest << #ManifestAdventofCodeDay5\r\tslots: {};\r\ttag: \'Manifest\';\r\tpackage: \'Advent-of-Code-Day5\''
+				},
+				#name : #ManifestAdventofCodeDay5,
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#metaClass : @6,
+				#comment : RGCommentDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #ManifestAdventofCodeDay5
+					},
+					#parent : @11,
+					#content : 'Please describe the package using the class comment of the included manifest class. The manifest class also includes other additional metadata for the package. These meta data are used by other tools such as the SmalllintManifestChecker and the critics Browser',
+					#stamp : '<historical>'
+				},
+				#classVariables : OrderedCollection [ ],
+				#package : RGPackageDefinition {
+					#name : #Advent-of-Code-Day5,
+					#definedClasses : IdentityDictionary { },
+					#definedMethods : IdentityDictionary { },
+					#extensionMethods : IdentityDictionary { }
+				},
+				#packageTag : #Manifest,
+				#sharedPools : OrderedCollection [ ]
+			}
+		},
+		#protocol : #code-critics
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '60' ],
+		#self : OmReference [ '61' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'ManifestAdventofCodeDay5 class'
+			},
+			#name : #ruleUnclassifiedMethodsRuleV1FalsePositive,
+			#protocol : #code-critics,
+			#sourceCode : 'ruleUnclassifiedMethodsRuleV1FalsePositive\r\r\t<ignoreForCoverage>\r\t^ #()',
+			#stamp : '12/7/2024 07:35',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '61' ],
+		#self : OmReference [ '62' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'ManifestAdventofCodeDay5 class'
+			},
+			#name : #ruleUnclassifiedMethodsRuleV1FalsePositive,
+			#protocol : #code-critics,
+			#sourceCode : 'ruleUnclassifiedMethodsRuleV1FalsePositive\r\r\t<ignoreForCoverage>\r\t^ #()',
+			#stamp : '12/7/2024 07:35',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'ManifestAdventofCodeDay5 class'
+			},
+			#name : #ruleUnclassifiedMethodsRuleV1FalsePositive,
+			#protocol : #code-critics,
+			#sourceCode : 'ruleUnclassifiedMethodsRuleV1FalsePositive\r\r\t<ignoreForCoverage>\r\t^ #(#(#(#RGMethodDefinition #(#Part1 #populateRules: #false)) #\'2024-12-07T07:35:37.100993+08:00\') )',
+			#stamp : '12/7/2024 07:35',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '62' ],
+		#self : OmReference [ '63' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules:  stream\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:34',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  self rules add: #foo.\r  self rules add: #bar.\r  self rules addAll: \'hello\'.\r  self rules.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:37',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '63' ],
+		#self : OmReference [ '64' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #rules,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'rules\r  ^ Set new.',
+			#stamp : '12/7/2024 07:40',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '64' ],
+		#self : OmReference [ '65' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #rules,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'rules\r  ^ Set new.',
+			#stamp : '12/7/2024 07:40',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #rules,
+			#protocol : #accessing,
+			#sourceCode : 'rules\r  ^ Set new.',
+			#stamp : '12/7/2024 07:40',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '65' ],
+		#self : OmReference [ '66' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: { #rules };\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #rules,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '66' ],
+		#self : OmReference [ '67' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: { #rules };\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #rules,
+					#parent : @26
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @26
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @26,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @26
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '67' ],
+		#self : OmReference [ '68' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  self rules add: #foo.\r  self rules add: #bar.\r  self rules addAll: \'hello\'.\r  self rules.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:37',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules add: #foo.\r  self rules add: #bar.\r  self rules addAll: \'hello\'.\r  self rules.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:40',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '68' ],
+		#self : OmReference [ '69' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #countrules };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #countrules,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '69' ],
+		#self : OmReference [ '70' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: { #rules };\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #rules,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #countrules };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @28
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @28,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #countrules,
+					#parent : @28
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '70' ],
+		#self : OmReference [ '71' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count . #rules };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				},
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #rules,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '71' ],
+		#self : OmReference [ '72' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #countrules };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #countrules,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count . #rules };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @26
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @26,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @26
+				},
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #rules,
+					#parent : @26
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '72' ],
+		#self : OmReference [ '73' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules add: #foo.\r  self rules add: #bar.\r  self rules addAll: \'hello\'.\r  self rules.\r\r  ^ stream upToEnd.',
+			#stamp : '12/7/2024 07:40',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules add: #foo.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:43',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '73' ],
+		#self : OmReference [ '74' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  self populateRules: stream.\r\r  ^ self rules.',
+			#stamp : '12/7/2024 07:44',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #main,
+			#protocol : #accessing,
+			#sourceCode : 'main\r  | home input stream |\r  home := FileLocator home / \'Code/aoc/2024/day5/\'.\r  input := \'example.txt\' asFileReference.\r  input isFile ifFalse: [^ false].\r\r  stream := input readStream.\r\r  self populateRules: stream.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:44',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '74' ],
+		#self : OmReference [ '75' ]
+	},
+	#content : EpMethodRemoval {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #rules,
+			#protocol : #accessing,
+			#sourceCode : 'rules\r  ^ Set new.',
+			#stamp : '12/7/2024 07:40',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '75' ],
+		#self : OmReference [ '76' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules add: #foo.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:43',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules := Set new. \r  rules add: #foo.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:44',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '76' ],
+		#self : OmReference [ '77' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules := Set new. \r  rules add: #foo.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:44',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules := Set new. \r  rules add: #foo.\r\r  stream upTo: #|.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:46',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '77' ],
+		#self : OmReference [ '78' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules := Set new. \r  rules add: #foo.\r\r  stream upTo: #|.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:46',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules := Set new. \r  rules add: #foo.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:46',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '78' ],
+		#self : OmReference [ '79' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r\r  rules := Set new. \r  rules add: #foo.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:46',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r  \r\r  rules := Set new. \r  rules add: #foo.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:52',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '79' ],
+		#self : OmReference [ '80' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r  \r\r  rules := Set new. \r  rules add: #foo.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:52',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules add: bolers.\r  \r\r  rules := Set new. \r  rules add: #foo.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '80' ],
+		#self : OmReference [ '81' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules add: bolers.\r  \r\r  rules := Set new. \r  rules add: #foo.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r\r  \r\r  rules := Set new. \r  rules add: #foo.\r  rules add: bolers.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '81' ],
+		#self : OmReference [ '82' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r\r  \r\r  rules := Set new. \r  rules add: #foo.\r  rules add: bolers.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r  rules add: bolers.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '82' ],
+		#self : OmReference [ '83' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r  rules add: bolers.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r  rules add: parts.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '83' ],
+		#self : OmReference [ '84' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r  rules add: parts.\r\r  rules add: (stream upTo: #|).\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:53',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r  rules add: parts.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:54',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '84' ],
+		#self : OmReference [ '85' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r  rules add: parts.\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:54',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:54',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '85' ],
+		#self : OmReference [ '86' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r  parts := string substrings: \'\\n\\n\'.\r  rolers := string parts: \'\\n\'.\r  bolers := string parts: \'|\'.\r\r  rules := Set new. \r  rules add: #foo.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:54',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: #foo.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '86' ],
+		#self : OmReference [ '87' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string parts rolers bolers |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: #foo.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: #foo.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '87' ],
+		#self : OmReference [ '88' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: #foo.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: string.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '88' ],
+		#self : OmReference [ '89' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: string.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: string substring: \'|\'.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '89' ],
+		#self : OmReference [ '90' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: string substring: \'|\'.\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:55',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substring: \'|\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '90' ],
+		#self : OmReference [ '91' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substring: \'|\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substring: $|).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '91' ],
+		#self : OmReference [ '92' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substring: $|).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: $|).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '92' ],
+		#self : OmReference [ '93' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: $|).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \' \').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '93' ],
+		#self : OmReference [ '94' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \' \').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:56',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \'|\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:57',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '94' ],
+		#self : OmReference [ '95' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \'|\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:57',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \'\\n\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:57',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '95' ],
+		#self : OmReference [ '96' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \'\\n\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:57',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \' \').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:57',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '96' ],
+		#self : OmReference [ '97' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: \' \').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:57',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: $lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:58',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '97' ],
+		#self : OmReference [ '98' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: $lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:58',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: Character cr).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:59',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '98' ],
+		#self : OmReference [ '99' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: Character cr).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:59',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: Character lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:59',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '99' ],
+		#self : OmReference [ '100' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: Character lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 07:59',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf + Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:00',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '100' ],
+		#self : OmReference [ '101' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf + Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:00',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:00',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '101' ],
+		#self : OmReference [ '102' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string  |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:00',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '102' ],
+		#self : OmReference [ '103' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '103' ],
+		#self : OmReference [ '104' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '104' ],
+		#self : OmReference [ '105' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '105' ],
+		#self : OmReference [ '106' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: (Character lf , Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:01',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: (Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:02',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '106' ],
+		#self : OmReference [ '107' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string substrings: (Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:02',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:03',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '107' ],
+		#self : OmReference [ '108' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: (Character lf)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:03',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: Character lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:03',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '108' ],
+		#self : OmReference [ '109' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: (string splitOn: Character lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:03',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) splitOn: Character lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:03',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '109' ],
+		#self : OmReference [ '110' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) splitOn: Character lf).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:03',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) splitOn: ByteString).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:04',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '110' ],
+		#self : OmReference [ '111' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) splitOn: ByteString).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:04',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) splitOn: \'\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:05',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '111' ],
+		#self : OmReference [ '112' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) splitOn: \'\').\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:05',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) substrings:( $, asByteString)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:10',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '112' ],
+		#self : OmReference [ '113' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) substrings:( $, asByteString)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:10',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) substrings: ( $, asByteString)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:10',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '113' ],
+		#self : OmReference [ '114' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) substrings: ( $, asByteString)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:10',
+			#package : #Advent-of-Code-Day5
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Part1
+			},
+			#name : #'populateRules:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'populateRules: stream\r  | string |\r  string := stream upToEnd.\r\r\r  rules := Set new. \r  rules add: ((string splitOn: Character lf) substrings: ($, asByteString)).\r\r\r  ^ rules.',
+			#stamp : '12/7/2024 08:10',
+			#package : #Advent-of-Code-Day5
+		}
+	}
+}

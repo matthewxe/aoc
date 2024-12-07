@@ -1,0 +1,191 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ 'Pharo12.0-SNAPSHOT-64bit-2132280c01.4D4F6A680C98', '27' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/gravity/Code/aoc/2024/day5/Pharo.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #total . #what };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #total,
+					#parent : @6
+				},
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #what,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #count };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #count,
+					#parent : @6
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Part1\r\tslots: {};\r\tsharedVariables: { #total . #what };\r\tpackage: \'Advent-of-Code-Day5\''
+			},
+			#name : #Part1,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Part1 class\r\tslots: {}'
+				},
+				#name : #'Part1 class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @26
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Part1
+				},
+				#parent : @26,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #total,
+					#parent : @26
+				},
+				RGClassVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Part1
+					},
+					#name : #what,
+					#parent : @26
+				}
+			],
+			#package : RGPackageDefinition {
+				#name : #Advent-of-Code-Day5,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/gravity/Code/aoc/2024/day5/Pharo.image'
+	}
+}

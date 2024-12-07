@@ -1,0 +1,1 @@
+| j |MyCounter new.j := MyCounter value.
