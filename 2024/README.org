@@ -79,6 +79,7 @@ that is my biggest threat here is finding a good resource to learn from
 the MOOC scared me and other youtube tutorials were too old but i found
 *** Recommended resources
 1. [[https://github.com/pharo-open-documentation/pharo-wiki?tab=readme-ov-file#beginners][Pharo-wiki]]
+** Day 6 - Lua
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

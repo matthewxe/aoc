@@ -1,0 +1,37 @@
+C++
+Python
+JavaScript w/ JSDoc
+TypeScript
+PHP
+Java
+Ruby
+art
+Swift
+Scala
+Kotlin
+Rust
+Elixir
+Zig
+Clojure
+Haskell
+Nim
+Gleam
+Julia
+Odin
+C3
+F#
+OCaml
+Crystal
+D
+Delphi Open Pascal
+Perl
+Fortran
+Erlang
+COBOL
+Groovy
+Assembly
+Bash
+SQL
+Forth
+Factor
+Prolog
