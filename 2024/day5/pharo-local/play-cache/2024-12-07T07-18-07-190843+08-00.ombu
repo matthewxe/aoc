@@ -1,13 +1,0 @@
-OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T07:18:13.397438+08:00' ],
-		#self : OmReference [ '1' ]
-	},
-	#content : 'Part1 new main.'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T07:20:42.692756+08:00' ],
-		#self : OmReference [ '2' ]
-	},
-	#content : 'Part1 new main.\r'
-}

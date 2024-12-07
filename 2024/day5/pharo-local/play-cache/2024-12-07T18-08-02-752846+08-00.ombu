@@ -1,25 +1,0 @@
-OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T18:08:16.372879+08:00' ],
-		#self : OmReference [ '1' ]
-	},
-	#content : 'Class {\r    #name : #MyClass\r    #superclass : #Object\r    #category : \'MyPackage\'\r}\r\rmethod {\r    ^ \'Hello, World!\'\r}'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T18:09:04.395604+08:00' ],
-		#self : OmReference [ '2' ]
-	},
-	#content : '| tonelFile |\rtonelFile := \'path/to/MyPackage.tonel\'.\rTonelReader fileIn: tonelFile.'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T18:09:23.658851+08:00' ],
-		#self : OmReference [ '3' ]
-	},
-	#content : '| tonelFile |\rtonelFile := \'/home/gravity/Code/aoc/2024/day5/shit.tonel\'.\rTonelReader fileIn: tonelFile.'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T18:09:37.657257+08:00' ],
-		#self : OmReference [ '4' ]
-	},
-	#content : '| tonelFile |\rtonelFile := \'/home/gravity/Code/aoc/2024/day5/shit.tonel\'.\rTonelReader fileIn: tonelFile.\r\r    \rMyClass new inspect'
-}

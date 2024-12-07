@@ -1,55 +1,0 @@
-OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:43:50.762978+08:00' ],
-		#self : OmReference [ '1' ]
-	},
-	#content : 'Part1 increase'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:44:51.532067+08:00' ],
-		#self : OmReference [ '2' ]
-	},
-	#content : 'Advent-of-Code-Day5 Part1 increase\rPart1 amount'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:45:41.982514+08:00' ],
-		#self : OmReference [ '3' ]
-	},
-	#content : '| c |\r\rc := Part1 new.\r\rc increase: 5\rc amount '
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:46:28.193332+08:00' ],
-		#self : OmReference [ '4' ]
-	},
-	#content : '| c |\r\rc := Part1 new.\r\rc increase: 5.\rc amount '
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:51:43.227769+08:00' ],
-		#self : OmReference [ '5' ]
-	},
-	#content : '| c |\r\rc := Part1 new.\r\rc set: 5.\rc amount '
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:52:56.90725+08:00' ],
-		#self : OmReference [ '6' ]
-	},
-	#content : '| c |\r\rc := Part1 new.\r\rc set: 5.\rc amount \r\rTranscribe\r'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:53:19.58644+08:00' ],
-		#self : OmReference [ '7' ]
-	},
-	#content : '| c |\r\rc := Part1 new.\r\rc set: 5.\rc amount \r\rj := c hi.\r\rTranscript Show'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:53:50.089638+08:00' ],
-		#self : OmReference [ '8' ]
-	},
-	#content : '| c j |\r\rc := Part1 new.\r\rc set: 5.\rc amount \r\rj := c hi.\r\rTranscript show: j.'
-}OmEntry {
-	#tags : {
-		#timestamp : DateAndTime [ '2024-12-07T06:53:54.881844+08:00' ],
-		#self : OmReference [ '9' ]
-	},
-	#content : '| c j |\r\rc := Part1 new.\r\rc set: 5.\rc amount.\r\rj := c hi.\r\rTranscript show: j.'
-}

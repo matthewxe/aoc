@@ -1,1 +1,0 @@
-| c j |c := Part1 new.c set: 5.c amount.j := c hi.Transcript show: j.

@@ -6,6 +6,11 @@ The ones ive used
 Its something I've used before
 ** Day 2 - Go
 I've also used go before so nothing new
+*** Recommended resources
+1. Go Tour
+2. Go by Example
+3. Go in y minutes
+4. Learn go with TDD
 ** Day 3 - C#
 *** Installation Process
 Running C# code seems to require installing the dotnet sdk which i install very chaddly with nixos and write my first hello world code
@@ -24,6 +29,56 @@ https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates
   6. ref and out arguments
      - very cool feature, it allows for like pointer-like way of writing code from C, but im guessing this one is alot safer and more restrictions
 - I think I should learn more about the language first so I can write more cleaner solutions
+*** Recommended resources
+1. Google
+   - You just search what you need and since its popular enough its right there
+** +Day 4 - Solidity+
+- I realized thhat solidity is a very domain specific language for ethereum and crypto shit so im just gonna reroll cause my ass does not give a shit aobut that
+** Day 4 - R(script)
+*** Installation process
+I just install R with nixpkgs
+and just used Rscript to run my scripts
+*** General thoughts
+- This doesnt look as bad as solidity so ill go with it
+- The funny thing about this language is that its literally just the letter R, and also the irritating part about it that its name is just the letter R.
+- I just realize that R isn't just a language, but an entire suite of statistical tools actually it is just a statistical tool that makes use of code as an interface.
+- I gave up trying to install the LSP cause I couldn't immediately make it compatible with NixOS
+- After beating it
+  1. This was a tough one, since R treats most stuff as a piece of data and not a chunk of memory if you get me. It's pretty tricky even just getting a single letter out of a character vector.
+  2. But maybe I'm just skill issuing and R ia actually amazing at string manipulation and I just don't know it
+  3. Types are practically nonexistant, which seems completely fair to make it alot easier to comprehend for the average statistician whos gonna use this, just like python.
+  4. Although the variable assignment looks funny (<-)
+  5. This is definitely not a language for doing advent of code challengnes. And for what I said earlier, its basically a statistical tool in a medium of programming languages, just because It's a programming language I could do anything, but that doesn't mean I should do anything when its made for a specific usecase
+  6. I wanted to show like plots, graphs or something based on the AOC challenge, to atleast learn the other cool stuff R can do but I never got around to doing that.
+*** Recommended resources
+1. Google
+2. W3 Schools
+3. [[https://www.rdocumentation.org][Rdocumentation]] searching up function definitions
+** Day 5 - Smalltalk (Pharo)
+- I was kinda excited for this cause my only backgrund knowledge of small talk is that its a purely object oriented language and that seems very intriguing
+- Everyone seems to be recommending the implementation Pharo for smalltalk so im gonna be using that
+*** Installation
+This is kindof cool, you install the Pharo VM and then download a Pharo image, the Pharo VM is just an environment to run Pharo in, and the fun part is the Pharo image, where it includes the source code for the Pharo language with all the libraries needed for the actual Pharo programming language to be used. It also includes within the image itself the IDE that is used which is really cool. that also means you can edit the IDE source code from within it.
+
+
+Update: adding examples and adding information
+
+You should understand the original philosophy of the Smalltalk.
+
+The whole OS was supposed to be written in Smalltalk and the GUI was to call the Smalltalk libraries in the OS.
+
+Very cool
+
+*** General thoughts
+Everything is an object is a very cool concept
+
+IN REALITY THIS THING IS SO HARD TO GRASP AND I DONT GOT MUCH TIME AND IM SO FRUSTRATED WITH THIS THING SO IM GONNA USE THE EASIER IMPLEMENTATION
+
+nvm guys i was just hungry and didnt find the correct resources
+that is my biggest threat here is finding a good resource to learn from
+the MOOC scared me and other youtube tutorials were too old but i found
+*** Recommended resources
+1. [[https://github.com/pharo-open-documentation/pharo-wiki?tab=readme-ov-file#beginners][Pharo-wiki]]
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
@@ -53,6 +108,12 @@ https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates
   5. Nim
   6. Gleam
   7. Julia
+  8. Odin
+  9. C3
+  10. F#
+  11. OCaml
+  12. Crystal
+  13. D
 - Lesser known legacy languages
   1. Delphi Open Pascal
   2. Perl
