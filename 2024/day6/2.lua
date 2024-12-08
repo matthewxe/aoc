@@ -22,7 +22,21 @@ function print_map(map)
 	for _, l in ipairs(map) do
 		local tmp = ''
 		for _, w in ipairs(l) do
-			tmp = tmp .. w
+			if type(w) == 'table' then
+				if w['O'] ~= nil then
+					tmp = tmp .. 'O'
+				elseif ((w['^'] ~= nil) or (w['v'] ~= nil)) and ((w['<'] ~= nil) or (w['>'] ~= nil)) then
+					tmp = tmp .. '+'
+				elseif (w['^'] ~= nil) or (w['v'] ~= nil) then
+					tmp = tmp .. '|'
+				elseif (w['<'] ~= nil) or (w['>'] ~= nil) then
+					tmp = tmp .. '-'
+				else
+					tmp = tmp .. 'X'
+				end
+			else
+				tmp = tmp .. w
+			end
 		end
 		print(tmp)
 	end
@@ -72,38 +86,70 @@ function check_guard(map)
 	return nil, nil, nil
 end
 
-local total = 0
-local x, y, sym = check_guard(input)
-if x == nil or y == nil or sym == nil then
-	print(total)
-	return nil, nil
-end
-
-local alts = { ['^'] = 'u', ['>'] = 'r', ['v'] = 'd', ['<'] = 'l' }
-while true do
-	input[y][x] = 'X'
-
-	local limity = 0 < (y + sym.y) and (y + sym.y) < #input + 1
-	local limitx = 0 < (x + sym.x) and (x + sym.x) < #input[1] + 1
-	if not (limity and limitx) then
-		break
-	end
-
-	local future = input[y + sym.y][x + sym.x]
-	if future == '#' then
-		local limity90 = 0 < (y + sym.y90) and (y + sym.y90) < #input + 1
-		local limitx90 = 0 < (x + sym.x90) and (x + sym.x90) < #input[1] + 1
-		if not (limity90 and limitx90) then
-			break
+local function simulate(map, x, y, sym)
+	while true do
+		if type(map[y][x]) == 'string' then
+			map[y][x] = { [sym.symbol] = true }
+		elseif type(map[y][x]) == 'table' then
+			if map[y][x][sym.symbol] ~= nil then
+				print('loop!')
+				print_map(map)
+				return false
+			end
+			map[y][x][sym.symbol] = true
 		end
-		input[y + sym.y90][x + sym.x90] = sym.symbol90
-		sym.rotate()
-	else
-		input[y + sym.y][x + sym.x] = sym.symbol
+
+		local limity = 0 < (y + sym.y) and (y + sym.y) < #map + 1
+		local limitx = 0 < (x + sym.x) and (x + sym.x) < #map[1] + 1
+		if not (limity and limitx) then
+			return true
+		end
+
+		local future = map[y + sym.y][x + sym.x]
+		if future == '#' or future == 'O' then
+			local limity90 = 0 < (y + sym.y90) and (y + sym.y90) < #map + 1
+			local limitx90 = 0 < (x + sym.x90) and (x + sym.x90) < #map[1] + 1
+			if not (limity90 and limitx90) then
+				return true
+			end
+			-- input[y + sym.y90][x + sym.x90] = sym.symbol90
+			sym.rotate()
+		else
+			-- input[y + sym.y][x + sym.x] = sym.symbol
+		end
+		y = y + sym.y
+		x = x + sym.x
 	end
-	y = y + sym.y
-	x = x + sym.x
 end
 
+local total = 0
 print_map(input)
+
+for i = 1, #input do
+	for j = 1, #input[i] do
+		if input[i][j] ~= '.' then
+			goto continue
+		end
+
+		local x, y, sym = check_guard(input)
+		if x == nil or y == nil or sym == nil then
+			print(total)
+			return nil, nil
+		end
+		local blocked = {} -- create the matrix
+		for l = 1, #input do
+			blocked[l] = {} -- create a new row
+			for m = 1, #input[i] do
+				blocked[l][m] = input[l][m]
+			end
+		end
+		blocked[i][j] = 'O'
+
+		if simulate(blocked, x, y, sym) == false then
+			total = total + 1
+		end
+		::continue::
+	end
+end
+
 print(total)
