@@ -89,7 +89,10 @@ In concept this is kinda like how a Lisp machine would work but its an OOP VM or
 Lua is something I already know cause I use neovim btw.
 *** Recommended Resources
 1. https://www.lua.org
+2. https://www.lua.org/pil
 2. and google like stack overflow
+** Day 7 - Free Pascal
+So aparrently Delphi is not open source  so were gonna be using the open source Free Pascal instead lol
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

@@ -5,7 +5,7 @@ TypeScript
 PHP
 Java
 Ruby
-art
+Dart
 Swift
 Scala
 Kotlin
@@ -23,7 +23,6 @@ F#
 OCaml
 Crystal
 D
-Delphi Open Pascal
 Perl
 Fortran
 Erlang
