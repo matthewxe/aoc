@@ -92,8 +92,8 @@ local function simulate(map, x, y, sym)
 			map[y][x] = { [sym.symbol] = true }
 		elseif type(map[y][x]) == 'table' then
 			if map[y][x][sym.symbol] ~= nil then
-				print('loop!')
-				print_map(map)
+				-- print('loop!')
+				-- print_map(map)
 				return false
 			end
 			map[y][x][sym.symbol] = true
@@ -112,44 +112,79 @@ local function simulate(map, x, y, sym)
 			if not (limity90 and limitx90) then
 				return true
 			end
-			-- input[y + sym.y90][x + sym.x90] = sym.symbol90
 			sym.rotate()
-		else
-			-- input[y + sym.y][x + sym.x] = sym.symbol
+
+			local future90 = map[y + sym.y][x + sym.x]
+			if future90 == '#' or future90 == 'O' then
+				local limity180 = 0 < (y + sym.y90) and (y + sym.y90) < #map + 1
+				local limitx180 = 0 < (x + sym.x90) and (x + sym.x90) < #map[1] + 1
+				if not (limity180 and limitx180) then
+					return true
+				end
+				sym.rotate()
+			end
 		end
 		y = y + sym.y
 		x = x + sym.x
 	end
 end
 
-local total = 0
-print_map(input)
+function test(map, i, j)
+	-- if map[i][j] ~= '.' then
+	-- 	return false
+	-- end
 
+	local blocked = {}
+	for l = 1, #map do
+		blocked[l] = {}
+		for m = 1, #map[i] do
+			blocked[l][m] = map[l][m]
+		end
+	end
+
+	local x, y, sym = check_guard(map)
+	if x == nil or y == nil or sym == nil then
+		return false
+	end
+
+	blocked[i][j] = 'O'
+	-- print('---------------------------------------------------------------------------------------------------')
+	-- print_map(blocked)
+	-- print('---------------------------------------------------------------------------------------------------')
+
+	if simulate(blocked, x, y, sym) == false then
+		return true
+	end
+
+	return false
+end
+
+local total = 0
 for i = 1, #input do
 	for j = 1, #input[i] do
-		if input[i][j] ~= '.' then
-			goto continue
-		end
-
-		local x, y, sym = check_guard(input)
-		if x == nil or y == nil or sym == nil then
-			print(total)
-			return nil, nil
-		end
-		local blocked = {} -- create the matrix
-		for l = 1, #input do
-			blocked[l] = {} -- create a new row
-			for m = 1, #input[i] do
-				blocked[l][m] = input[l][m]
-			end
-		end
-		blocked[i][j] = 'O'
-
-		if simulate(blocked, x, y, sym) == false then
+		if test(input, i, j) == true then
 			total = total + 1
 		end
-		::continue::
 	end
 end
 
 print(total)
+-- 1631
+
+-- local shit, map = simulate(input, x, y, sym)
+-- if map == nil then
+-- 	return
+-- end
+--
+-- local total2 = 0
+-- for _, l in ipairs(map) do
+-- 	for _, s in ipairs(l) do
+-- 		if type(s) == 'table' then
+-- 			total2 = total2 + 1
+-- 		end
+-- 	end
+-- end
+--
+-- print_map(map)
+--
+-- print(total2)

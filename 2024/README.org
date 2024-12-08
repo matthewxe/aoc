@@ -87,6 +87,9 @@ In concept this is kinda like how a Lisp machine would work but its an OOP VM or
 3. https://mooc.pharo.org/
 ** Day 6 - Lua
 Lua is something I already know cause I use neovim btw.
+*** Recommended Resources
+1. https://www.lua.org
+2. and google like stack overflow
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
