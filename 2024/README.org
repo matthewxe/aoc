@@ -77,9 +77,16 @@ IN REALITY THIS THING IS SO HARD TO GRASP AND I DONT GOT MUCH TIME AND IM SO FRU
 nvm guys i was just hungry and didnt find the correct resources
 that is my biggest threat here is finding a good resource to learn from
 the MOOC scared me and other youtube tutorials were too old but i found
+*** After solving thoughts
+1. That was extremely difficult to slog through.
+   The most important thing you need to know when learning this language is just knowing where you can find the stuff you want and just generally learning the whole OS and IDE thing cause its pretty difficult otherwise
+In concept this is kinda like how a Lisp machine would work but its an OOP VM or something. If you fw that but its purely objects then go for it.
 *** Recommended resources
 1. [[https://github.com/pharo-open-documentation/pharo-wiki?tab=readme-ov-file#beginners][Pharo-wiki]]
+2. https://learnxinyminutes.com/docs/smalltalk/
+3. https://mooc.pharo.org/
 ** Day 6 - Lua
+Lua is something I already know cause I use neovim btw.
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
