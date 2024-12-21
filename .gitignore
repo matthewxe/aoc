@@ -1,5 +1,6 @@
 input*
 *.out
+*.bin
 2024/day5/Pharo*
 2024/day5/pharo-local/
 2024/day7/1.o

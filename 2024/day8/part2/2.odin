@@ -9,6 +9,32 @@ Coordinates :: struct {
 	y: int,
 }
 
+// checks if a point is inside the bounds of a grid
+check_inside :: proc(grid_size: int, x: int, y: int) -> bool {
+	return (0 <= x && x < grid_size) && (0 <= y && y < grid_size)
+}
+
+check_continue :: proc(
+	x: int,
+	y: int,
+	x_diff: int,
+	y_diff: int,
+	grid_size: int,
+	placed: [][]bool,
+) -> int {
+	x_updated := x + x_diff
+	y_updated := y + y_diff
+	if !check_inside(grid_size, x_updated, y_updated) {
+		return 0
+	}
+	if placed[y_updated][x_updated] != true {
+		placed[y_updated][x_updated] = true
+		return check_continue(x_updated, y_updated, x_diff, y_diff, grid_size, placed) + 1
+	}
+
+	return check_continue(x_updated, y_updated, x_diff, y_diff, grid_size, placed)
+}
+
 main :: proc() {
 	// Check if it there is a single file argument
 	if len(os.args) != 2 {
@@ -40,37 +66,33 @@ main :: proc() {
 	for str, i in input {
 		for chr, j in str {
 			if chr != '.' {
+				if placed[i][j] != true {
+					final += 1
+					placed[i][j] = true
+				}
+
 				out, ok := antennas[chr]
 				if !ok {
 					antennas[chr] = make([dynamic]Coordinates, 1)
 					antennas[chr][0].y = i
 					antennas[chr][0].x = j
+					continue
 				}
 
-				for cords in out {
-					vertical_difference := i - cords.y
-					horizontal_difference := j - cords.x
-					y1 := i + vertical_difference
-					x1 := j + horizontal_difference
+				for coords in out {
+					x_diff := j - coords.x
+					y_diff := i - coords.y
 
-					y2 := cords.y - vertical_difference
-					x2 := cords.x - horizontal_difference
-
-					if !(y1 < 0 || y1 >= grid_size) &&
-					   !(x1 < 0 || x1 >= grid_size) &&
-					   placed[y1][x1] != true {
-						final += 1
-						placed[y1][x1] = true
-					}
-					if !(y2 < 0 || y2 >= grid_size) &&
-					   !(x2 < 0 || x2 >= grid_size) &&
-					   placed[y2][x2] != true {
-						final += 1
-						placed[y2][x2] = true
-					}
-
+					final += check_continue(j, i, x_diff, y_diff, grid_size, placed)
+					final += check_continue(
+						coords.x,
+						coords.y,
+						-x_diff,
+						-y_diff,
+						grid_size,
+						placed,
+					)
 				}
-
 				append(&(antennas[chr]), Coordinates{j, i})
 			}
 		}

@@ -17,7 +17,6 @@ Haskell
 Nim
 Gleam
 Julia
-Odin
 C3
 F#
 OCaml
