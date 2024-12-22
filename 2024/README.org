@@ -95,6 +95,12 @@ Lua is something I already know cause I use neovim btw.
 So aparrently Delphi is not open source  so were gonna be using the open source Free Pascal instead lol
 ** Day 8 - Odin
 I lost my mind using free pascal so im just gonna skip to using odin
+Odin literally kinda just feels like Go but it's manual memory management so it's fast and slick now 😎
+I'm sure there is more to odin than what I've seen at face value, but at face value it feels like Go and occasionally feels like C. That isn't really a bad thing though, cause I love Go and C.
+** Day 9 - Zig
+well i guess im gonna start using the language that Odin is usually compared to, the C killer Zig
+
+
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

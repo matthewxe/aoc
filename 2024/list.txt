@@ -11,7 +11,6 @@ Scala
 Kotlin
 Rust
 Elixir
-Zig
 Clojure
 Haskell
 Nim
