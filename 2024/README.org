@@ -97,8 +97,24 @@ So aparrently Delphi is not open source  so were gonna be using the open source 
 I lost my mind using free pascal so im just gonna skip to using odin
 Odin literally kinda just feels like Go but it's manual memory management so it's fast and slick now 😎
 I'm sure there is more to odin than what I've seen at face value, but at face value it feels like Go and occasionally feels like C. That isn't really a bad thing though, cause I love Go and C.
+*** Recommended Resources
+https://odin-lang.org/docs/overview/
+https://pkg.odin-lang.org/
+
 ** Day 9 - Zig
 well i guess im gonna start using the language that Odin is usually compared to, the C killer Zig
+the tests are really nice tbh, they are pretty easy to use. my main issue is that coming from simpler languages, the different kinds of strings threw me off and the typings are very strict.
+something I REALLY dont like is that there is no scoped temporary variables like in C,
+I want to do reverse loops and I would usually make a for loop that has a condition that goes backwards but zig's best answer is defining a variable that is not scoped insid the while loop and that kinda sucks
+https://github.com/ziglang/zig/issues/5070
+the president of zig adiveses using anonymous blocks, but it looks ugly and at that point why not just add those C style loops? doesn't zig want to replace C, just make it a little easier for us...
+https://github.com/ziglang/zig/issues/5070#issuecomment-617436226
+*** Recommended Resources
+https://zig.guide
+https://ziglang.org/documentation/master/std/
+https://ziglang.org/learn/getting-started/
+https://ziggit.dev
+Google
 
 
 ** My list of languages to randomize in

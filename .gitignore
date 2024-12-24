@@ -5,3 +5,5 @@ input*
 2024/day5/pharo-local/
 2024/day7/1.o
 2024/day7/1
+.zig-cache
+*.a
