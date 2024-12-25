@@ -21,8 +21,8 @@ pub fn main() !void {
     defer allocator.free(block);
     make_block(block, input);
 
-    printf("{s}", .{input});
-    print_block(block);
+    // printf("{s}", .{input});
+    // print_block(block);
 
     const full = try make_disk_map(allocator, input, 0);
     const blank = try make_disk_map(allocator, input, 1);
