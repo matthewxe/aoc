@@ -6,4 +6,5 @@ input*
 2024/day7/1.o
 2024/day7/1
 .zig-cache
+zig-out
 *.a
