@@ -28,32 +28,60 @@ pub fn main() !void {
     const blank = try make_disk_map(allocator, input, 1);
     defer allocator.free(full);
     defer allocator.free(blank);
-    // defragment(block, full, blank);
 
-    printf("full {any}", .{full});
-    printf("blank {any}", .{blank});
-    print_block(block);
+    // printf("full {any}", .{full});
+    // printf("blank {any}", .{blank});
+
+    defragment(block, full, blank);
+
+    // print_block(block);
 
     printf("{}", .{checksum(block)});
 }
 
 fn defragment(block: []usize, full: []disk_map, blank: []disk_map) void {
-    _ = block;
-    _ = full;
-    _ = blank;
+    var i = full.len;
+    while (i > 0) {
+        i -= 1;
+
+        var j: usize = 0;
+        while (j < blank.len) : (j += 1) {
+            if ((blank[j].size < full[i].size) or (i <= j)) {
+                continue;
+            }
+
+            rewrite(block, blank[j].pos, i, full[i].size);
+            rewrite(block, full[i].pos, std.math.maxInt(usize), full[i].size);
+            blank[j].size -= full[i].size;
+            blank[j].pos += full[i].size;
+            break;
+        }
+    }
+
     return;
 }
 
-fn make_disk_map(allocator: std.mem.Allocator, input: []u8, offset: usize) ![]disk_map {
-    const block = try allocator.alloc(disk_map, (input.len + 1) / 2);
+fn rewrite(block: []usize, pos: usize, new: usize, size: usize) void {
+    var i: usize = pos;
+    while (i < (pos + size)) : (i += 1) {
+        block[i] = new;
+    }
+}
 
-    var shit: usize = offset;
+fn make_disk_map(allocator: std.mem.Allocator, input: []u8, offset: usize) ![]disk_map {
+    const block = try allocator.alloc(disk_map, ((input.len + 1 - offset) / 2));
+
+    var shit: usize = 0;
     var i: usize = offset;
     while (i < input.len) : (i += 2) {
-        shit += input[i] - gap;
-        const pos = ((i + 1) / 2);
-        block[pos].pos = shit;
+        const pos = (i / 2);
         block[pos].size = input[i] - gap;
+
+        if (i > 0) {
+            shit += input[i - 1] - gap;
+        }
+        block[pos].pos = shit;
+        shit += input[i] - gap;
     }
     return block;
 }
