@@ -1,24 +1,25 @@
-#!/usr/bin/env mksh
+#!/usr/bin/env bash
 
 str=$(cat $1)
 
-# readarray -d " " -t arr <<<$str
-set -A arr $str
+readarray -d " " -t arr <<<$str
 
 i=0
 max=$2
-size=${#arr[*]}
+size=${#arr[@]}
 
-echo ${arr[*]}
+echo ${arr[@]}
 
 while [ $i -lt $max ]; do
         echo "Current: $((i + 1))"
         j=0
         while [ $j -lt $size ]; do
-                arr[j]=$((${arr[j]}))
+                arr[j]=$((10#${arr[j]}))
+
+                rock_len=${#arr[j]}
                 if [ ${arr[j]} = 0 ]; then
                         arr[j]="1"
-                elif ((${#arr[j]} % 2 == 0)); then
+                elif ((rock_len % 2 == 0)); then
                         # echo "before: ${arr[@]}"
                         # left=${arr[@]:0:$j}
                         # right=${arr[@]:((j + 1)):size}
@@ -30,26 +31,10 @@ while [ $i -lt $max ]; do
                         # echo "middle_right: $middle_right"
                         # echo "right: ${right[@]}"
 
-                        tmp=()
-
-                        for ((k=0;k<j;k+=1)); do
-                                tmp+="${arr[k]}"
-                        done
-                        echo "uno: $tmp"
-                        # right=${arr[@]:((j + 1)):size}
-                        tmp+="${arr[j]:0:((${#arr[j]} / 2))}"
-                        echo "dos: $tmp"
-                        tmp+="${arr[j]:((${#arr[j]} / 2)):${#arr[j]}}"
-                        echo "tres: $tmp"
-
-                        for ((k=j+1; k < size; k++)); do
-                                tmp+="${arr[k]}"
-                        done
-                        echo "quatro: $tmp"
-
-                        # arr=$tmp
                         # inline version of this
-                        # arr=(${arr[*]:0:$j} ${arr[j]:0:((${#arr[j]} / 2))} ${arr[j]:((${#arr[j]} / 2)):${#arr[j]}} ${arr[*]:((j + 1)):size})
+
+                        rock_len_half=$((rock_len / 2))
+                        arr=(${arr[@]:0:$j} ${arr[j]:0:rock_len_half} ${arr[j]:rock_len_half:rock_len} ${arr[@]:((j + 1)):size})
 
                         ((size++))
                         ((j++))
@@ -60,7 +45,7 @@ while [ $i -lt $max ]; do
 
                 ((j++))
         done
-        echo "$i: ${arr[@]}"
+        # echo "$i: ${arr[@]}"
         ((i++))
 done
 
