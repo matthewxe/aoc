@@ -6,20 +6,6 @@ let rec print_string_list l =
       print_endline v;
       print_string_list t
 
-(** function list_count_unique, well duh it returns an integer of how many
-    unique items are there inside the list *)
-let list_count_unique l =
-  let rec check m d li =
-    match li with
-    | [] -> 1
-    | a :: b -> if b = d then 1 else if a = m then 0 else check m d b
-  in
-
-  let rec go n li =
-    match li with [] -> n | a :: b -> go (n + check a b l) b
-  in
-  go 0 l
-
 let () =
   if Array.length Sys.argv <> 2 then print_endline "part1 [filename]"
   else
@@ -46,17 +32,13 @@ let () =
       let rec check n x y =
         let cur = get_height x y in
         if n = cur - 1 then
-          if cur = 9 then
-            [ (* Printf.printf "FOUND AT X: %i Y: %i\n" x y; *) (x, y) ]
+          if cur = 9 then 1
           else
-            List.flatten
-              [
-                check cur (x + 1) y;
-                check cur (x - 1) y;
-                check cur x (y + 1);
-                check cur x (y - 1);
-              ]
-        else []
+            check cur (x + 1) y
+            + check cur (x - 1) y
+            + check cur x (y + 1)
+            + check cur x (y - 1)
+        else 0
       in
 
       (* Run check on every single coordinate and ad em up *)
@@ -64,9 +46,8 @@ let () =
         let t = ref 0 in
         for y = 0 to max_y do
           for x = 0 to max_x do
-            if get_height x y = 0 then
-              t := !t + list_count_unique (check (-1) x y)
-              (* Printf.printf "caught! %i %i got: %i\n" x y (check 10 x y)) *)
+            if get_height x y = 0 then t := !t + check (-1) x y
+              (* Printf.printf "caught! %i %i got: %i\n" x y (check (-1) x y)) *)
           done
         done;
         !t
