@@ -12,7 +12,17 @@ let rec print_int_pair_list l =
       Printf.printf "(%i, %i)" a b;
       print_int_pair_list c
 
-(* let rec remove_duplicates_int_pair_list l  *)
+(* let rec remove_duplicates_int_pair_list l = *)
+(*   match l with [] -> l | (a, b) :: c -> remove_duplicates_int_pair_list c *)
+
+let list_count_unique l =
+  let rec go n li =
+    match li with
+    (*balls*)
+    | [] -> n
+    | _ :: b -> go (n + 1) b
+  in
+  go 0 l
 
 let () =
   if Array.length Sys.argv <> 2 then print_endline "part1 [filename]"
@@ -62,8 +72,10 @@ let () =
       in
 
       print_int_pair_list scan;
-      print_int_pair_list (remove_duplicates_int_pair_list scan);
-      List.length (remove_duplicates_int_pair_list scan);
+      print_int (list_count_unique scan);
+
+      (* print_int_pair_list (list_count_unique scan); *)
+      (* print_int (List.length (list_count_unique scan)); *)
 
       (* print_list scan; *)
       print_char '\n';
