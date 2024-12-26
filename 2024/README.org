@@ -119,7 +119,8 @@ Google
 ** Day 10 - OCaml
 my first thing thinking about ocaml is that its anohetr functional programming language but apparently its actually a dialect of ML which is interesting and i havent added ML to the list and i would like to add ML but people dont really use that in production anyway and OCaml has been used to bootstrap rust so i trust that its very production ready
 *** Recommended resources
-https://ocaml.org/docs/installing-ocaml
+https://ocaml.org/docs
+https://ocaml.org/api
 
 ** My list of languages to randomize in
 - Heavily used languages
