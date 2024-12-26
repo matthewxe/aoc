@@ -5,17 +5,14 @@ let rec print_list l =
       print_endline v;
       print_list t
 
-let print_int_pair l =
-  Printf.printf "[%i, %i]" (List.hd l) (List.hd (List.tl l))
-
-let rec print_list_list l =
+let rec print_int_pair_list l =
   match l with
   | [] -> print_char '\n'
-  | v :: t ->
-      print_int_pair v;
-      print_list_list t
+  | (a, b) :: c ->
+      Printf.printf "(%i, %i)" a b;
+      print_int_pair_list c
 
-(* let rec check i = i *)
+(* let rec remove_duplicates_int_pair_list l  *)
 
 let () =
   if Array.length Sys.argv <> 2 then print_endline "part1 [filename]"
@@ -41,29 +38,33 @@ let () =
         if n = cur - 1 then
           if cur = 9 then (
             Printf.printf "FOUND AT X: %i Y: %i\n" x y;
-            [ x; y ])
+            [ (x, y) ])
           else
-            check cur (x + 1) y
-            @ check cur (x - 1) y
-            @ check cur x (y + 1)
-            @ check cur x (y - 1)
+            List.flatten
+              [
+                check cur (x + 1) y;
+                check cur (x - 1) y;
+                check cur x (y + 1);
+                check cur x (y - 1);
+              ]
         else []
       in
 
       let scan =
-        let t = ref [ [] ] in
+        let t = ref [] in
         for y = 0 to max_y do
           for x = 0 to max_x do
-            if get_pos x y = 0 then (
-              t := check (-1) x y :: !t;
-              print_int_list !t
-              (* Printf.printf "caught! %i %i got: %i\n" x y (check 10 x y)) *))
+            if get_pos x y = 0 then t := check (-1) x y @ !t
+              (* Printf.printf "caught! %i %i got: %i\n" x y (check 10 x y)) *)
           done
         done;
         !t
       in
 
-      print_list_list scan;
+      print_int_pair_list scan;
+      print_int_pair_list (remove_duplicates_int_pair_list scan);
+      List.length (remove_duplicates_int_pair_list scan);
+
       (* print_list scan; *)
       print_char '\n';
       close_in ic
