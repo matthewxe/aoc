@@ -18,7 +18,6 @@ Gleam
 Julia
 C3
 F#
-OCaml
 Crystal
 D
 Perl
@@ -27,7 +26,6 @@ Erlang
 COBOL
 Groovy
 Assembly
-Bash
 SQL
 Forth
 Factor

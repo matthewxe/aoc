@@ -118,10 +118,20 @@ Google
 
 ** Day 10 - OCaml
 my first thing thinking about ocaml is that its anohetr functional programming language but apparently its actually a dialect of ML which is interesting and i havent added ML to the list and i would like to add ML but people dont really use that in production anyway and OCaml has been used to bootstrap rust so i trust that its very production ready
+
+OCaml was alot of fun, probably because I got a little bit of some functional programming due to learning some lisp
+But one thing struck me that this is very different from lisp! It is statically typed instead of dynamically typed. The very common realization of this is to add floats together you have to use +. instead of + and if you want to you have to do type conversion first.
+Also a new thing that I discovered is pattern matching. I'll be honest I still have NO clue how it works but i managed to make it play along with my horrible code and it worked.
 *** Recommended resources
 https://ocaml.org/docs
 https://ocaml.org/api
 
+** Day 11 - Bash!?
+Well this is fun
+I have done some shell scripting before yes but I haven't used bash in this way before so this is interesting
+and probably a terrible use of bash
+HOLY FUCK THIS LANGUAGE IS SLOWWWW
+i had to optimize my solution so it can even finish
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
