@@ -8,3 +8,4 @@ input*
 .zig-cache
 zig-out
 *.a
+_build
