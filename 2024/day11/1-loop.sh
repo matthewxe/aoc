@@ -20,46 +20,18 @@ while [ $i -lt $max ]; do
                 if [ ${arr[j]} = 0 ]; then
                         arr[j]="1"
                 elif ((rock_len % 2 == 0)); then
-                        echo "before: ${arr[@]}"
-                        # left=${arr[@]:0:$j}
-                        # right=${arr[@]:((j + 1)):size}
-                        # middle_left=${arr[j]:0:((${#arr[j]} / 2))}
-                        # middle_right=${arr[j]:((${#arr[j]} / 2)):${#arr[j]}}
-                        # arr=($left $middle_left $middle_right $right)
-                        # echo "left: ${left[@]}"
-                        # echo "middle_left: $middle_left"
-                        # echo "middle_right: $middle_right"
-                        # echo "right: ${right[@]}"
-
-                        # inline version of this
-
-                        tmp=()
-
-                        k=0
-                        while [ $k -lt $j ]; do
-                                tmp+=(${arr[k]})
-                                ((k++))
+                        # echo "before: ${arr[@]}"
+                        rock_len_half=$((rock_len / 2))
+                        arr+=(${arr[-1]})
+                        for ((k = size; k > j; k--)); do
+                                arr[k]=${arr[((k - 1))]}
                         done
-                        echo "uno: $tmp"
-
-                        rock_len_half=$((${#arr[j]} / 2))
-                        tmp+=(${arr[j]:0:rock_len_half})
-                        echo "dos: $tmp"
-                        tmp+=(${arr[j]:rock_len_half:rock_len})
-                        echo "tres: $tmp"
-
-                        k=$((j + 1))
-                        while [ $k -lt $size ]; do
-                                tmp+="${arr[k]}"
-                                ((k++))
-                        done
-                        echo "quatro: $tmp"
-                        arr=$tmp
-                        # arr+=(${arr[@]:0:$j} ${arr[@]:((j + 1)):size})
+                        arr[j]=${arr[j]:0:rock_len_half}
+                        arr[j + 1]=${arr[j + 1]:rock_len_half:rock_len}
 
                         ((size++))
                         ((j++))
-                        echo "after: ${arr[@]}"
+                        # echo "after: ${arr[@]}"
                 else
                         arr[j]=$((arr[j] * 2024))
                 fi
@@ -71,5 +43,4 @@ while [ $i -lt $max ]; do
 done
 
 echo "----"
-# echo ${arr[@]}
 echo "len: $size"
