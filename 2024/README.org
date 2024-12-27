@@ -132,6 +132,7 @@ I have done some shell scripting before yes but I haven't used bash in this way 
 and probably a terrible use of bash
 HOLY FUCK THIS LANGUAGE IS SLOWWWW
 i had to optimize my solution so it can even finish
+It took me an entire HOUR to complete JUST the example
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

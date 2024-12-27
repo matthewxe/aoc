@@ -1,5 +1,3 @@
-#!/usr/bin/env mksh
-
 str=$(cat $1)
 
 set -A arr $str
@@ -45,5 +43,4 @@ while [ $i -lt $max ]; do
 done
 
 echo "----"
-# echo ${arr[@]}
 echo "len: $size"
