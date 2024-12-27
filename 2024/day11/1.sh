@@ -38,7 +38,7 @@ while [ $i -lt $max ]; do
 
                 ((j++))
         done
-        # echo "$i: ${arr[@]}"
+        echo "$i: ${arr[@]}"
         ((i++))
 done
 

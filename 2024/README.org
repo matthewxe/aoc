@@ -141,6 +141,10 @@ so i just stole someone's else's bash solution online
 and use that cause fuck thiis
 but because im hefty like that im gonna still run my
 shit solutino on a server for several days
+
+oops apparently its actually just my slow solution, instead of 8 hours now its 100ms lol
+i had to get a hint from the solutions that said "use counters instead of lists" and bash has hashtables (associative arrays) so that was convenient
+part2 now only took 3 seconds
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
