@@ -18,7 +18,6 @@ Gleam
 Julia
 C3
 F#
-Crystal
 D
 Perl
 Fortran

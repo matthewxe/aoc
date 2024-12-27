@@ -145,6 +145,13 @@ shit solutino on a server for several days
 oops apparently its actually just my slow solution, instead of 8 hours now its 100ms lol
 i had to get a hint from the solutions that said "use counters instead of lists" and bash has hashtables (associative arrays) so that was convenient
 part2 now only took 3 seconds
+*** Recommended resource
+google cause you aint gonna find what yo lookin for other than thatg
+** Day 12 - Crystal
+First impressions of crystal is that it's just ruby but compiled, which is neat.
+My first impression of ruby is that usually i just bundle it with python as the "interpreted but easy to understand and alot of used libraries are used with it so its still used"
+
+Dam, crystal doesnt even have a tree sitter parser yet, I remember I can just use the Ruby parser on crystal file type and it would work well enough.
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

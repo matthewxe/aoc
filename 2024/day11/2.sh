@@ -1,5 +1,24 @@
 #!/usr/bin/env bash
 
+# extra
+if (($# != 2)); then
+        echo "./2.sh [filename] [blinks]"
+        echo "Error: incorrect amount of arguments"
+        exit 1
+fi
+
+if ! test -f $1; then
+        echo "./2.sh [filename] [blinks]"
+        echo "Error: filename not found"
+        exit 2
+fi
+
+if ! [[ $2 =~ ^[0-9]+$ ]]; then
+        echo "./2.sh [filename] [blinks]"
+        echo "Error: blinks is not a number"
+        exit 3
+fi
+
 read -a arr <$1
 
 max=$2
