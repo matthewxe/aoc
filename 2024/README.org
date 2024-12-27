@@ -133,6 +133,14 @@ and probably a terrible use of bash
 HOLY FUCK THIS LANGUAGE IS SLOWWWW
 i had to optimize my solution so it can even finish
 It took me an entire HOUR to complete JUST the example
+it took me 7 hours to finish the input...
+and i just looked at part2 and it was about doing it again but with thrice the input...
+
+i really dont wanna optimize fucking bash
+so i just stole someone's else's bash solution online
+and use that cause fuck thiis
+but because im hefty like that im gonna still run my
+shit solutino on a server for several days
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

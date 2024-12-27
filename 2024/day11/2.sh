@@ -11,7 +11,7 @@ apply() {
         for stone in "${arr[@]}"; do
                 stone=$((10#${stone}))
                 stone_len=${#stone}
-                if ((10#$stone == 0)); then
+                if (($stone == 0)); then
                         new_arr+=(1)
                 elif ((stone_len % 2 == 0)); then
                         ((stone_len_half = stone_len / 2))
