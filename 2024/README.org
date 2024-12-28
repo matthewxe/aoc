@@ -152,6 +152,13 @@ First impressions of crystal is that it's just ruby but compiled, which is neat.
 My first impression of ruby is that usually i just bundle it with python as the "interpreted but easy to understand and alot of used libraries are used with it so its still used"
 
 Dam, crystal doesnt even have a tree sitter parser yet, I remember I can just use the Ruby parser on crystal file type and it would work well enough.
+*** Recommended Resources
+https://crystal-lang.org/
+https://crystal-lang.org/api
+https://crystal-lang.org/reference/1.14/tutorials/basics/index.html
+https://crystal-lang.org/reference/1.14/getting_started/cli.html
+https://crystal-lang.org/reference/1.14/syntax_and_semantics/exception_handling.html
+
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

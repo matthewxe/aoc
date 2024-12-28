@@ -52,6 +52,8 @@ class Garden
                         return {1, 0}
                 elsif @input[prev_y][prev_x] != @input[y][x]
                         return {1, 0}
+                elsif @plotted[y][x] == true
+                        return {0, 0}
                 else
                         area += 1
                 end
@@ -61,8 +63,10 @@ class Garden
                 i = 0
                 while i < shit.size
                         shit2 = shit[i]
+                        x_next = x + shit2[0]
+                        y_next = y + shit2[1]
 
-                        if x + shit2[0] == prev_x && y + shit2[1] == prev_y
+                        if x_next == prev_x && y_next == prev_y
                                 i += 1
                                 next
                         end
@@ -72,11 +76,9 @@ class Garden
 
                         i += 1
                 end
-                #puts "x: #{x}, y: #{y}, perimeter: #{perimeter}, area: #{area}"
+                puts "x: #{x}, y: #{y}, perimeter: #{perimeter}, area: #{area}"
                 return {perimeter, area}
         end
 end
-
-
 
 # vim:commentstring=#%s:
