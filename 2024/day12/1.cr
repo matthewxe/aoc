@@ -3,7 +3,6 @@ if ARGV.size != 1
         STDERR.puts "Incorrect argument count"
         exit(1)
 end
-puts ARGV[0]
 
 begin
         file = File.new(ARGV[0])
