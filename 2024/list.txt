@@ -19,7 +19,6 @@ Julia
 C3
 F#
 D
-Perl
 Fortran
 Erlang
 COBOL

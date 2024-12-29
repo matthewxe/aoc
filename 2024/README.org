@@ -152,13 +152,29 @@ First impressions of crystal is that it's just ruby but compiled, which is neat.
 My first impression of ruby is that usually i just bundle it with python as the "interpreted but easy to understand and alot of used libraries are used with it so its still used"
 
 Dam, crystal doesnt even have a tree sitter parser yet, I remember I can just use the Ruby parser on crystal file type and it would work well enough.
+
+honestly crystal just feels good, i think it does what it wanst to do. very simple syntax like ruby but powerful and performant like most compiled languages
+it has good documentation too actually, better than most
+
+its current biggest bhweakness is the lack of an LSP (thats good cause crystalline boke on me), but im sure the vscode extension works fine there (i use neovim btw)
 *** Recommended Resources
 https://crystal-lang.org/
 https://crystal-lang.org/api
-https://crystal-lang.org/reference/1.14/tutorials/basics/index.html
-https://crystal-lang.org/reference/1.14/getting_started/cli.html
-https://crystal-lang.org/reference/1.14/syntax_and_semantics/exception_handling.html
+https://crystal-lang.org/reference
 
+** Day 13 - Perl
+a lil [[https://www.reddit.com/r/linux/comments/f8yep4/comment/fiohcp9/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button][comment]] showed me like the hierarchy of programming languages for solving problems (in a \*nix system)
+try to write it in _sh_; if that fails, try _sed_; if that fails, try _awk_; if that fails try _c_
+so i made my own little updated version
+sh -> sed -> awk -> *Perl* -> Python -> C
+
+perl is about in the middle of "scripting language" up to general-purpose languages
+but ofcourse that doesn't mean its not capable (i used bash in day 11! even though its at the bottom of this hierarchy)
+
+anyways that is my first thoughts coming in
+*** Recommended Resources
+https://www.perl.org/learn.html
+https://www.perl.org/learn.html
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
