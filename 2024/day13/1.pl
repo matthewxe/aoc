@@ -24,28 +24,67 @@ while (<FH>) {
 }
 push( @input, [@temp] );
 
-my $i = 0;
-while ( $i < 4 ) {
-        my $j = 0;
-        print("i: $i\n");
-        while ( $j < 3 ) {
-                print("X: $input[$i][$j][0] Y: $input[$i][$j][1] \n");
-                $j++;
+# https://stackoverflow.com/a/22281682
+sub gcd {
+        if ( $_[1] == 0 ) {
+                return $_[0];
         }
-        $i++;
+        else {
+                return gcd( $_[1], $_[0] % $_[1] );
+        }
 }
 
-# print("@input\n");
-#
-# print("$input[0][0][1]\n");
-# for (@input) {
-#         my @shi = $_;
-#
-#         print( $shi[0][0][1] )
+my $total = 0;
+for my $i ( 0 .. @input - 1 ) {
 
-# print("A X: $_[0][0] Y: $_[0][1]\n");
-# print("B X: $_[1][0] Y: $_[1][1]\n");
-# print("P X: $_[2][0] Y: $_[2][1]\n");
-# }
+        # print("i: $i\n");
+        my $gcdx = gcd( $input[$i][0][0], $input[$i][1][0] );
+        my $gcdy = gcd( $input[$i][0][1], $input[$i][1][1] );
+        if (
+                !(
+                           ( $input[$i][2][0] % $gcdx == 0 )
+                        && ( $input[$i][2][1] % $gcdy == 0 )
+                )
+          )
+        {
+                # print("impossible!\n");
+                next;
+        }
+
+        my $min = 0;
+        for my $j ( 1 .. 200 ) {
+                for my $k ( 0 .. $j ) {
+                        my $acoins = $j - $k;
+                        my $bcoins = $k;
+                        if (
+                                (
+                                        ( $input[$i][0][0] * $acoins ) +
+                                        ( $input[$i][1][0] * $bcoins ) ==
+                                        $input[$i][2][0]
+                                )
+                                && ( ( $input[$i][0][1] * $acoins ) +
+                                        ( $input[$i][1][1] * $bcoins ) ==
+                                        $input[$i][2][1] )
+                          )
+                        {
+                                my $solution = ( $acoins * 3 ) + $bcoins;
+                                if (       $min == 0
+                                        || $solution < $min )
+                                {
+                                        $min = $solution;
+                                }
+
+                                # print(
+                                #         "possible: a $acoins(",
+                                #         $acoins * 3,
+                                #         "), b $bcoins\n"
+                                # );
+                        }
+                }
+        }
+        $total += $min;
+}
+
+print("$total\n");
 
 close(FH);
