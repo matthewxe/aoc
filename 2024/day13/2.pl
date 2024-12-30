@@ -1,6 +1,9 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+use POSIX qw/ceil/;
+use POSIX qw/floor/;
+use POSIX qw/abs/;
 
 if ( @ARGV != 1 ) {
         print("./1.pl [filename]\nERROR: incorrect argument count\n");
@@ -57,21 +60,21 @@ sub extended_gcd {
         return $D;
 }
 
-sub shift_solutinon {
-        my $X   = $_[0];
-        my $Y   = $_[1];
-        my $A   = $_[2];
-        my $B   = $_[3];
-        my $CNT = $_[4];
-        $$X += $CNT * $B;
-        $$Y -= $CNT * $A;
-}
+#sub shift_solution {
+#        my $X   = $_[0];
+#        my $Y   = $_[1];
+#        my $A   = $_[2];
+#        my $B   = $_[3];
+#        my $CNT = $_[4];
+#        $$X += $CNT * $B;
+#        $$Y -= $CNT * $A;
+#}
 
 my $total = 0;
 for my $i ( 0 .. @input - 1 ) {
 
-        $input[$i][2][0] += 10000000000000;
-        $input[$i][2][1] += 10000000000000;
+        #$input[$i][2][0] += 10000000000000;
+        #$input[$i][2][1] += 10000000000000;
 
         my $xx = undef;
         my $xy = undef;
@@ -89,56 +92,63 @@ for my $i ( 0 .. @input - 1 ) {
                 )
           )
         {
-                print("impossible!\n");
+                #print("impossible!\n");
                 next;
         }
+        if ( $gcdx != 1 ) {
+                $input[$i][0][0] /= $gcdx;
+                $input[$i][1][0] /= $gcdx;
+                $input[$i][2][0] /= $gcdx;
+        }
+        if ( $gcdy != 1 ) {
+                $input[$i][0][1] /= $gcdy;
+                $input[$i][1][1] /= $gcdy;
+                $input[$i][2][1] /= $gcdy;
+        }
 
-        print(
-"xx: $xx xy: $xy cx: $input[$i][2][0]\nyx: $yx, yy: $yy, cy: $input[$i][2][1]\n\n"
-        );
+#        print(
+#"xx: $xx xy: $xy cx: $input[$i][2][0]\nyx: $yx, yy: $yy, cy: $input[$i][2][1]\n\n"
+#        );
 
-        my $A = $input[$i][0][0];
-        my $B = $input[$i][1][0];
-        my $C = $input[$i][2][0];
+        my $Ax = $input[$i][0][0];
+        my $Bx = $input[$i][1][0];
+        my $Cx = $input[$i][2][0];
 
-        my $K = 10000000000;
+        #        print(
+        #"cx: $input[$i][2][0] gcdx $gcdx , gcdy $gcdy cy: $input[$i][2][1]\n"
+        #        );
+        #        print( "t >= ", ( -$xx * $Cx / $Bx ),
+        #                ", t <= ", ( $xy * $Cx / $Ax ), "\n\n" );
+        my $Ay = $input[$i][0][1];
+        my $By = $input[$i][1][1];
+        my $Cy = $input[$i][2][1];
 
-        #my $K = 11;
-        #my $X = $xx + ( $K * ( $B / $gcdx ) );
-        #my $Y = $xy - ( $K * ( $A / $gcdx ) );
+        #my $sizex = abs( ceil( -$xx * $Cx / $Bx ) - floor( $xy * $Cx / $Ax ) );
+        #my $sizey = abs( ceil( -$yx * $Cy / $By ) - floor( $yy * $Cy / $Ay ) );
 
-        #print("x: $X, y: $Y\n");
+        #my $sizey = @shity;
+        #print("Cx: $Cx Cy: $Cy, sizex: $sizex, sizey: $sizey\n");
 
-    shift_solution($xx, xy, $A, $B, (1 - $xx) / $B);
-    if ($xx < 1)
-    {
-    shift_solution($xx, xy, $A, $B, 1);
-    }
-    if (x > maxx)
-        return 0;
-    int lx1 = x;
+        print("x\n");
 
-    shift_solution(x, y, a, b, (maxx - x) / b);
-    if (x > maxx)
-        shift_solution(x, y, a, b, -sign_b);
-    int rx1 = x;
+        #for my $t ( ceil( -$xx * $Cx / $Bx ) .. ceil( -$xx * $Cx / $Bx ) ) {
 
-    shift_solution(x, y, a, b, -(miny - y) / a);
-    if (y < miny)
-        shift_solution(x, y, a, b, -sign_a);
-    if (y > maxy)
-        return 0;
-    int lx2 = x;
+        for my $t ( ceil( -$xx * $Cx / $Bx ) .. floor( $xy * $Cx / $Ax ) ) {
+                print( "x:", ( $t * $Bx ) + ( $xx * $Cx ),
+                        " y:", ( $xy * $Cx ) - ( $t * $Ax ), "\n" );
+        }
+        print("y\n");
 
-    shift_solution(x, y, a, b, -(maxy - y) / a);
-    if (y > maxy)
-        shift_solution(x, y, a, b, sign_a);
-    int rx2 = x;
+        #for my $t ( ceil( -$yx * $Cy / $By ) .. ceil( -$yx * $Cy / $By ) ) {
 
-    if (lx2 > rx2)
-        swap(lx2, rx2);
-    int lx = max(lx1, lx2);
-    int rx = min(rx1, rx2);
+        for my $t ( ceil( -$yx * $Cy / $By ) .. floor( $yy * $Cy / $Ay ) ) {
+                print( "x:", ( $t * $By ) + ( $yx * $Cy ),
+                        " y:", ( $yy * $Cy ) - ( $t * $Ay ), "\n" );
+        }
+
+        print("\n\n");
+
+        #print("xx $xx xy $xy\n");
 
         #my $min = 0;
         #for my $j ( 1 .. 10000000000000 ) {
