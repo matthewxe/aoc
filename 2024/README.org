@@ -175,16 +175,20 @@ anyways that is my first thoughts coming in
 
 perls a little silly with the arguments to subroutines and the usage of "magic variables" (like $_, $1, $2, $3...) dynamic typing is good for a scripting language cause i dont have to worry about any of that. and it seems like it has alot of functions and feauters you can just import just incase youre msising stuff
 
-
-my main problem was the actual problem itself where i have never learnt how to do redacted
-<details>
-  <summary>Q1: What is the best Language in the World? </summary>
-   A1: JavaScript
-</details>
+my main problem was the actual aoooc problem itself where i have never learnt how to do the math topic needed to solve it. but when i got a hint on what i needed to learn, after learning it it was extremely easy to implement in perl so i like perl for scripting, big thumbs up, but i would probably rather use python when i need to make a script just because there is a good chance the person im talking to knows python and i can share my script with them very easily
 *** Recommended Resources
 https://www.perl.org/learn.html
 https://www.perltutorial.org/
 google
+** Day 14 - Gleam
+I saw some youtube videos about this but I haven't really looked into that much so its fresh to me.
+
+Okay, this feels like OCaml + Node, its the functional programming of Ocaml (but feels alot more nice in my opinion) and Node package management, how the project is setup and like importing modules and stuff. Which I do like OCaml and being honest I have never used Node like once but it looks like how I see it work.
+*** Recommended Resources
+https://gleam.run/writing-gleam/
+https://tour.gleam.run
+https://hexdocs.pm/gleam_stdlib/gleam
+https://github.com/gleam-lang/awesome-gleam
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
