@@ -172,9 +172,19 @@ perl is about in the middle of "scripting language" up to general-purpose langua
 but ofcourse that doesn't mean its not capable (i used bash in day 11! even though its at the bottom of this hierarchy)
 
 anyways that is my first thoughts coming in
+
+perls a little silly with the arguments to subroutines and the usage of "magic variables" (like $_, $1, $2, $3...) dynamic typing is good for a scripting language cause i dont have to worry about any of that. and it seems like it has alot of functions and feauters you can just import just incase youre msising stuff
+
+
+my main problem was the actual problem itself where i have never learnt how to do redacted
+<details>
+  <summary>Q1: What is the best Language in the World? </summary>
+   A1: JavaScript
+</details>
 *** Recommended Resources
 https://www.perl.org/learn.html
-https://www.perl.org/learn.html
+https://www.perltutorial.org/
+google
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
