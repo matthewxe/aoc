@@ -60,21 +60,11 @@ sub extended_gcd {
         return $D;
 }
 
-#sub shift_solution {
-#        my $X   = $_[0];
-#        my $Y   = $_[1];
-#        my $A   = $_[2];
-#        my $B   = $_[3];
-#        my $CNT = $_[4];
-#        $$X += $CNT * $B;
-#        $$Y -= $CNT * $A;
-#}
-
 my $total = 0;
 for my $i ( 0 .. @input - 1 ) {
 
-        #$input[$i][2][0] += 10000000000000;
-        #$input[$i][2][1] += 10000000000000;
+        $input[$i][2][0] += 10000000000000;
+        $input[$i][2][1] += 10000000000000;
 
         my $xx = undef;
         my $xy = undef;
@@ -110,74 +100,141 @@ for my $i ( 0 .. @input - 1 ) {
 #"xx: $xx xy: $xy cx: $input[$i][2][0]\nyx: $yx, yy: $yy, cy: $input[$i][2][1]\n\n"
 #        );
 
-        my $Ax = $input[$i][0][0];
-        my $Bx = $input[$i][1][0];
-        my $Cx = $input[$i][2][0];
-
         #        print(
         #"cx: $input[$i][2][0] gcdx $gcdx , gcdy $gcdy cy: $input[$i][2][1]\n"
         #        );
         #        print( "t >= ", ( -$xx * $Cx / $Bx ),
         #                ", t <= ", ( $xy * $Cx / $Ax ), "\n\n" );
+
+        #
+        #print("Cx: $Cx Cy: $Cy, sizex: $sizex, sizey: $sizey\n");
+
+        #print("x\n");
+
+        my $Ax = $input[$i][0][0];
+        my $Bx = $input[$i][1][0];
+        my $Cx = $input[$i][2][0];
         my $Ay = $input[$i][0][1];
         my $By = $input[$i][1][1];
         my $Cy = $input[$i][2][1];
 
-        #my $sizex = abs( ceil( -$xx * $Cx / $Bx ) - floor( $xy * $Cx / $Ax ) );
-        #my $sizey = abs( ceil( -$yx * $Cy / $By ) - floor( $yy * $Cy / $Ay ) );
+        my $minx = ceil( -$xx * $Cx / $Bx );
+        my $maxx = floor( $xy * $Cx / $Ax );
+        my $miny = ceil( -$yx * $Cy / $By );
+        my $maxy = floor( $yy * $Cy / $Ay );
+        my $t    = $minx;
+        my $j    = $miny;
 
-        #my $sizey = @shity;
-        #print("Cx: $Cx Cy: $Cy, sizex: $sizex, sizey: $sizey\n");
+        my $X_half = floor( ( $maxx - $minx ) / 2 );
+        my $Y_half = floor( ( $maxy - $miny ) / 2 );
 
-        print("x\n");
+        my $Xx              = ( $t * $Bx ) + ( $xx * $Cx );
+        my $Yx              = ( $j * $By ) + ( $yx * $Cy );
+        my $Xy              = ( $xy * $Cx ) - ( $t * $Ax );
+        my $Yy              = ( $yy * $Cy ) - ( $j * $Ay );
+        my $base_next       = undef;
+        my $base_cur        = undef;
+        my $base_val        = undef;
+        my $base_half       = undef;
+        my $base_half_orig  = undef;
+        my $other_cur       = undef;
+        my $other_next      = undef;
+        my $other_val       = undef;
+        my $other_half      = undef;
+        my $other_half_orig = undef;
 
-        #for my $t ( ceil( -$xx * $Cx / $Bx ) .. ceil( -$xx * $Cx / $Bx ) ) {
+        if ( $Xy > $Yy ) {
+                $base_next       = \$Xx;
+                $base_cur        = \$Xy;
+                $base_val        = \$t;
+                $base_half       = \$X_half;
+                $base_half_orig  = $X_half;
+                $other_cur       = \$Yy;
+                $other_next      = \$Yx;
+                $other_val       = \$j;
+                $other_half      = \$Y_half;
+                $other_half_orig = $Y_half;
+        }
+        else {
+                $base_cur        = \$Yy;
+                $base_next       = \$Yx;
+                $base_val        = \$j;
+                $base_half       = \$Y_half;
+                $base_half_orig  = $Y_half;
+                $other_cur       = \$Xy;
+                $other_next      = \$Xx;
+                $other_val       = \$t;
+                $other_half_orig = $X_half;
+        }
+
+       # while (1) {
+       #         $Xx = ( $t * $Bx ) + ( $xx * $Cx );
+       #         $Xy = ( $xy * $Cx ) - ( $t * $Ax );
+       #         $Yx = ( $j * $By ) + ( $yx * $Cy );
+       #         $Yy = ( $yy * $Cy ) - ( $j * $Ay );
+       #
+       #         my $userword = <STDIN>;
+       #
+       #         # crunch $userword;
+       #
+       #         if ( $$base_half < 2 ) {
+       #
+       #                 # if ( $$other_half < 2 ) {
+       #                 #         $$base_half  = $base_half_orig;
+       #                 #         $$other_half = $other_half_orig;
+       #                 # }
+       #                 if (       $$base_cur == $$other_cur
+       #                         && $$base_next == $$other_cur )
+       #                 {
+       #                         next;
+       #                 }
+       #                 ( $base_cur,  $base_next ) = ( $base_next, $base_cur );
+       #                 ( $other_cur, $other_next ) =
+       #                   ( $other_next, $other_cur );
+       #                 ( $base_val,  $other_val ) = ( $other_val, $base_val );
+       #                 ( $base_half, $other_half ) =
+       #                   ( $other_half, $base_half );
+       #         }
+       #         elsif ( $$base_cur > $$other_cur ) {
+       #                 $$base_val += $$base_half;
+       #                 $$base_half = ceil( $$base_half / 2 );
+       #
+       #                 print("$$base_cur > $$other_cur\n");
+       #                 print("Xx: $Xx Yx: $Yx\n");
+       #                 print("Xy: $Xy Yy: $Yy, base_half: $$base_half\n");
+       #         }
+       #         elsif ( $$base_cur < $$other_cur ) {
+       #                 $$base_val -= $$base_half;
+       #                 $$base_half = ceil( $$base_half / 2 );
+       #
+       #                 # $j += $Y_half;
+       #                 # $Y_half = ceil( $Y_half / 2 );
+       #
+       #                 print("$$base_cur < $$other_cur\n");
+       #                 print("Xx: $Xx Yx: $Yx\n");
+       #                 print("Xy: $Xy Yy: $Yy, base_half: $$base_half\n");
+       #         }
+       #
+       # }
+
+        #print( "Yx:", ( $j * $By ) + ( $yx * $Cy ),
+        #        "\nYy:", ( $yy * $Cy ) - ( $j * $Ay ), "\n" );
 
         for my $t ( ceil( -$xx * $Cx / $Bx ) .. floor( $xy * $Cx / $Ax ) ) {
-                print( "x:", ( $t * $Bx ) + ( $xx * $Cx ),
-                        " y:", ( $xy * $Cx ) - ( $t * $Ax ), "\n" );
+
+                # print( "x:", ( $t * $Bx ) + ( $xx * $Cx ),
+                #         " y:", ( $xy * $Cx ) - ( $t * $Ax ), "\n" );
         }
         print("y\n");
 
-        #for my $t ( ceil( -$yx * $Cy / $By ) .. ceil( -$yx * $Cy / $By ) ) {
+        for my $t ( $miny .. $maxy ) {
 
-        for my $t ( ceil( -$yx * $Cy / $By ) .. floor( $yy * $Cy / $Ay ) ) {
-                print( "x:", ( $t * $By ) + ( $yx * $Cy ),
-                        " y:", ( $yy * $Cy ) - ( $t * $Ay ), "\n" );
+                # print( "x:", ( $t * $By ) + ( $yx * $Cy ),
+                #         " y:", ( $yy * $Cy ) - ( $t * $Ay ), "\n" );
         }
 
         print("\n\n");
 
-        #print("xx $xx xy $xy\n");
-
-        #my $min = 0;
-        #for my $j ( 1 .. 10000000000000 ) {
-        #        for my $k ( 0 .. $j ) {
-        #                my $acoins = $k;
-        #                my $bcoins = $j - $k;
-        #
-        #                print("$acoins $bcoins\n");
-        #                if (
-        #                        (
-        #                                ( $input[$i][0][0] * $acoins ) +
-        #                                ( $input[$i][1][0] * $bcoins ) ==
-        #                                $input[$i][2][0]
-        #                        )
-        #                        && ( ( $input[$i][0][1] * $acoins ) +
-        #                                ( $input[$i][1][1] * $bcoins ) ==
-        #                                $input[$i][2][1] )
-        #                  )
-        #                {
-        #                        my $solution = ( $acoins * 3 ) + $bcoins;
-        #                        if (       $min == 0
-        #                                || $solution < $min )
-        #                        {
-        #                                $min = $solution;
-        #                        }
-        #                }
-        #        }
-        #}
-        #$total += $min;
 }
 
 print("$total\n");
