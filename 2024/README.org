@@ -184,6 +184,8 @@ google
 I saw some youtube videos about this but I haven't really looked into that much so its fresh to me.
 
 Okay, this feels like OCaml + Node, its the functional programming of Ocaml (but feels alot more nice in my opinion) and Node package management, how the project is setup and like importing modules and stuff. Which I do like OCaml and being honest I have never used Node like once but it looks like how I see it work.
+
+Its LSP error messages are incredibly user friendly
 *** Recommended Resources
 https://gleam.run/writing-gleam/
 https://tour.gleam.run
