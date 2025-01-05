@@ -2,9 +2,9 @@ import common
 import gleam/dict
 import gleam/float
 import gleam/int
-import gleam/io
 import gleam/list
 
+/// Solves part2 by a given input string separated by \n and tile width and height
 pub fn calculate(input: String, tile_width: Int, tile_height: Int) -> Int {
   common.parse(input)
   |> simulate(tile_width, tile_height)
@@ -46,15 +46,15 @@ fn simulate_loop(
       //   tile_width,
       //   tile_height,
       // )
-      io.debug(seconds)
+      // io.debug(seconds)
       minimum_entropy_seconds
     }
     False -> {
       case calculate_entropy(input, int.to_float(tile_width * tile_height)) {
         new_entropy if new_entropy >=. minimum_entropy -> {
-          common.print_robots(input, tile_width, tile_height)
-          io.debug(seconds)
-          io.debug(new_entropy)
+          // common.print_robots(input, tile_width, tile_height)
+          // io.debug(seconds)
+          // io.debug(new_entropy)
 
           simulate_loop(
             list.map(input, common.step(_, tile_width, tile_height)),
@@ -78,7 +78,6 @@ fn simulate_loop(
             tile_height,
           )
       }
-      // io.debug(common.bots_to_list2(input, tile_width, tile_height))
     }
   }
 }

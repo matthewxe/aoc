@@ -1,5 +1,4 @@
 import gleam/dict
-import gleam/erlang/process
 import gleam/int
 import gleam/io
 import gleam/list
@@ -13,7 +12,8 @@ pub type Robot {
   Robot(position: Position, velocity: Position)
 }
 
-// Advances the robot
+/// Takes in a robot, tile width and height, returns a robot with an updated
+/// position 
 pub fn step(robot: Robot, tile_width: Int, tile_height: Int) -> Robot {
   let new_x = case robot.position.x + robot.velocity.x {
     new_x if new_x >= tile_width -> new_x - tile_width
@@ -29,6 +29,7 @@ pub fn step(robot: Robot, tile_width: Int, tile_height: Int) -> Robot {
   Robot(Position(new_x, new_y), Position(robot.velocity.x, robot.velocity.y))
 }
 
+/// Parses an input string separated by \n, and returns a List of all the robots
 pub fn parse(input: String) -> List(Robot) {
   // Drops the final \n so it doesnt create an empty list
   string.drop_end(input, 1)
@@ -96,6 +97,7 @@ fn power_loop(x: Int, exp: Int, accumulator: Int) -> Int {
   }
 }
 
+/// Given a list of robots, tile floor width and height, it prints it like the diagrams shown in examples
 pub fn print_robots(
   input: List(Robot),
   tile_width: Int,
@@ -112,7 +114,7 @@ fn print_robots_loop(
   x: Int,
   y: Int,
   final: String,
-) -> Nil {
+) {
   let check = fn(accumulator: Int, r: Robot) -> Int {
     case r.position {
       Position(cur_x, cur_y) if cur_x == x && cur_y == y -> accumulator + 1
@@ -167,80 +169,7 @@ fn print_robots_loop(
   }
 }
 
-pub fn bots_to_list2(
-  input: List(Robot),
-  tile_width: Int,
-  tile_height: Int,
-) -> List(List(Int)) {
-  bots_to_list2_loop(input, tile_width, tile_height, 0, 0, [], [])
-}
-
-fn bots_to_list2_loop(
-  input: List(Robot),
-  tile_width: Int,
-  tile_height: Int,
-  x: Int,
-  y: Int,
-  final_list: List(List(Int)),
-  current_list: List(Int),
-) -> List(List(Int)) {
-  let check = fn(accumulator: Int, r: Robot) -> Int {
-    case r.position {
-      Position(cur_x, cur_y) if cur_x == x && cur_y == y -> accumulator + 1
-      _ -> accumulator
-    }
-  }
-
-  case x, y {
-    x, _ if x == tile_width ->
-      bots_to_list2_loop(
-        input,
-        tile_width,
-        tile_height,
-        0,
-        y + 1,
-        list.append(final_list, [current_list]),
-        [],
-      )
-    _, y if y == tile_height -> {
-      // let assert Ok(esc) = string.utf_codepoint(27)
-      //
-      // string.from_utf_codepoints([esc])
-      // |> string.append("[2J")
-      // |> io.println
-      // io.println(final)
-      // process.sleep(100)
-      final_list
-    }
-
-    _, _ -> {
-      let num = list.fold(input, 0, check)
-      case num == 0 {
-        True ->
-          bots_to_list2_loop(
-            input,
-            tile_width,
-            tile_height,
-            x + 1,
-            y,
-            final_list,
-            list.append(current_list, [0]),
-          )
-        False ->
-          bots_to_list2_loop(
-            input,
-            tile_width,
-            tile_height,
-            x + 1,
-            y,
-            final_list,
-            list.append(current_list, [num]),
-          )
-      }
-    }
-  }
-}
-
+/// Turns a list of robots into a dict of robots
 pub fn bots_to_dict_count(
   input: List(Robot),
 ) -> dict.Dict(Position, List(Position)) {

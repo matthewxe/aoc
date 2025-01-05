@@ -1,7 +1,8 @@
 import common
 import gleam/list
 
-/// Calculate the safety factor from a \n separated string of the input
+/// Solves part1 by a given input string separated by \n, how many seconds to
+/// run the simulation and tile width and height
 pub fn calculate(
   input: String,
   seconds: Int,
