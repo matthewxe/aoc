@@ -1,6 +1,8 @@
+import common
 import gleeunit
 import gleeunit/should
 import part1
+import simplifile
 
 pub fn main() {
   gleeunit.main()
@@ -13,19 +15,27 @@ pub fn hello_world_test() {
 }
 
 pub fn power_test() {
-  part1.power(10, 0)
+  common.power(10, 0)
   |> should.equal(1)
-  part1.power(10, 1)
+  common.power(10, 1)
   |> should.equal(10)
-  part1.power(10, 2)
+  common.power(10, 2)
   |> should.equal(100)
-  part1.power(10, 3)
+  common.power(10, 3)
   |> should.equal(1000)
-  part1.power(10, 4)
+  common.power(10, 4)
   |> should.equal(10_000)
 }
 
 pub fn string_to_int_test() {
-  part1.string_to_int("6")
+  common.string_to_int("6")
   |> should.equal(6)
+}
+
+pub fn part1_test() {
+  let input = simplifile.read("test/example.txt")
+  case input {
+    Ok(text) -> part1.calculate(text, 100, 11, 7) |> should.equal(12)
+    Error(_error) -> Nil
+  }
 }
