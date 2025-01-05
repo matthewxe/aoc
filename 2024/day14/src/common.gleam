@@ -1,3 +1,8 @@
+import gleam/dict
+import gleam/erlang/process
+import gleam/int
+import gleam/io
+import gleam/list
 import gleam/string
 
 pub type Position {
@@ -88,5 +93,180 @@ fn power_loop(x: Int, exp: Int, accumulator: Int) -> Int {
   case exp > 0 {
     True -> power_loop(x, exp - 1, accumulator * x)
     False -> accumulator
+  }
+}
+
+pub fn print_robots(
+  input: List(Robot),
+  tile_width: Int,
+  tile_height: Int,
+) -> List(Robot) {
+  print_robots_loop(input, tile_width, tile_height, 0, 0, "")
+  input
+}
+
+fn print_robots_loop(
+  input: List(Robot),
+  tile_width: Int,
+  tile_height: Int,
+  x: Int,
+  y: Int,
+  final: String,
+) -> Nil {
+  let check = fn(accumulator: Int, r: Robot) -> Int {
+    case r.position {
+      Position(cur_x, cur_y) if cur_x == x && cur_y == y -> accumulator + 1
+      _ -> accumulator
+    }
+  }
+
+  case x, y {
+    x, _ if x == tile_width -> {
+      print_robots_loop(
+        input,
+        tile_width,
+        tile_height,
+        0,
+        y + 1,
+        string.append(final, "\n"),
+      )
+    }
+    _, y if y == tile_height -> {
+      // let assert Ok(esc) = string.utf_codepoint(27)
+      //
+      // string.from_utf_codepoints([esc])
+      // |> string.append("[2J")
+      // |> io.println
+      io.println(final)
+      // process.sleep(100)
+    }
+
+    _, _ -> {
+      let num = list.fold(input, 0, check)
+      case num == 0 {
+        True ->
+          print_robots_loop(
+            input,
+            tile_width,
+            tile_height,
+            x + 1,
+            y,
+            string.append(final, "."),
+          )
+        False ->
+          print_robots_loop(
+            input,
+            tile_width,
+            tile_height,
+            x + 1,
+            y,
+            string.append(final, int.to_string(num)),
+          )
+      }
+    }
+  }
+}
+
+pub fn bots_to_list2(
+  input: List(Robot),
+  tile_width: Int,
+  tile_height: Int,
+) -> List(List(Int)) {
+  bots_to_list2_loop(input, tile_width, tile_height, 0, 0, [], [])
+}
+
+pub fn bots_to_dict_count(
+  input: List(Robot),
+) -> dict.Dict(Position, List(Position)) {
+  bots_to_dict_count_loop(input, dict.new())
+}
+
+fn bots_to_dict_count_loop(
+  input: List(Robot),
+  final: dict.Dict(Position, List(Position)),
+) -> dict.Dict(Position, List(Position)) {
+  case input {
+    [first, ..rest] -> {
+      case dict.get(final, first.position) {
+        Ok(val) ->
+          bots_to_dict_count_loop(
+            rest,
+            final
+              |> dict.insert(first.position, list.append(val, [first.velocity])),
+          )
+        Error(_) ->
+          bots_to_dict_count_loop(
+            rest,
+            final |> dict.insert(first.position, [first.velocity]),
+          )
+      }
+    }
+    _ -> final
+  }
+}
+
+fn bots_to_list2_loop(
+  input: List(Robot),
+  tile_width: Int,
+  tile_height: Int,
+  x: Int,
+  y: Int,
+  final_list: List(List(Int)),
+  current_list: List(Int),
+) -> List(List(Int)) {
+  let check = fn(accumulator: Int, r: Robot) -> Int {
+    case r.position {
+      Position(cur_x, cur_y) if cur_x == x && cur_y == y -> accumulator + 1
+      _ -> accumulator
+    }
+  }
+
+  case x, y {
+    x, _ if x == tile_width ->
+      bots_to_list2_loop(
+        input,
+        tile_width,
+        tile_height,
+        0,
+        y + 1,
+        list.append(final_list, [current_list]),
+        [],
+      )
+    _, y if y == tile_height -> {
+      // let assert Ok(esc) = string.utf_codepoint(27)
+      //
+      // string.from_utf_codepoints([esc])
+      // |> string.append("[2J")
+      // |> io.println
+      // io.println(final)
+      // process.sleep(100)
+      final_list
+    }
+
+    _, _ -> {
+      let num = list.fold(input, 0, check)
+      case num == 0 {
+        True ->
+          bots_to_list2_loop(
+            input,
+            tile_width,
+            tile_height,
+            x + 1,
+            y,
+            final_list,
+            list.append(current_list, [0]),
+          )
+        False ->
+          bots_to_list2_loop(
+            input,
+            tile_width,
+            tile_height,
+            x + 1,
+            y,
+            final_list,
+            list.append(current_list, [num]),
+          )
+      }
+    }
   }
 }

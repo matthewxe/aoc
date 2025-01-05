@@ -1,12 +1,13 @@
 import argv
 import gleam/int
 import gleam/io
-import part1
 import part2
 import simplifile
 
+// import part1
+
 pub fn main() {
-  cli(part1.calculate(_, 100, 101, 103))
+  // cli(part1.calculate(_, 100, 101, 103))
   cli(part2.calculate(_, 101, 103))
 }
 
