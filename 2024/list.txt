@@ -14,7 +14,6 @@ Elixir
 Clojure
 Haskell
 Nim
-Gleam
 Julia
 C3
 F#

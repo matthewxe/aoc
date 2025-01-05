@@ -194,6 +194,8 @@ https://gleam.run/writing-gleam/
 https://tour.gleam.run
 https://hexdocs.pm/gleam_stdlib/gleam
 https://github.com/gleam-lang/awesome-gleam
+** Day 15 - Swift
+This could be interesting. The latest news I have heard about Swift is that the Ladybird project found that Swift fit their needs perfectly for their browser engine, so that gave Swift some good reputation for me that it had a place outside of Apple products.
 ** My list of languages to randomize in
 - Heavily used languages
   1. C
@@ -214,7 +216,7 @@ https://github.com/gleam-lang/awesome-gleam
   4. Kotlin
   5. Lua
   6. Rust
-  7. Solidity
+  7. -+Solidity+-
 - Lesser known but promising languages
   1. Elixir
   2. Zig
@@ -238,7 +240,7 @@ https://github.com/gleam-lang/awesome-gleam
   6. COBOL
   7. R
   8. Groovy
-- Incomplete Langauges (takes longer to understand)
+- Incomplete Langauges (takes longer to understand/isn't really made for this)
   1. Assembly
   2. Bash
   3. SQL
