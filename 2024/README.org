@@ -187,7 +187,8 @@ Okay, this feels like OCaml + Node, its the functional programming of Ocaml (but
 
 Its LSP error messages are incredibly user friendly
 
-Probably the most fun and easy to use programming language so far, crystal could have been here if it had a good LSP
+Probably the most fun and easy to use programming language so far, crystal could have been here if it had a good LSP...
+Okay I loved the puzzle, (I had to take a hint on what to do though cause I literally had no idea on what I could have done). But Gleam really made it seamless. It is very nice to use. The LSP is amazing, and it does what I liked about OCaml but as smooth as an experience like Crystal (despite crystal not having an LSP). And also the package system is pretty frictionless.
 *** Recommended Resources
 https://gleam.run/writing-gleam/
 https://tour.gleam.run

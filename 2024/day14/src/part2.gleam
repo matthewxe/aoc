@@ -20,7 +20,7 @@ fn simulate(input: List(common.Robot), tile_width: Int, tile_height: Int) -> Int
   // simulate_loop(input, input, 0, tile_width, tile_height)
   simulate_loop(
     list.map(input, common.step(_, tile_width, tile_height)),
-    common.bots_to_dict_count(input),
+    bots_to_dict_count(input),
     1,
     0,
     0.0,
@@ -38,7 +38,7 @@ fn simulate_loop(
   tile_width: Int,
   tile_height: Int,
 ) -> Int {
-  case common.bots_to_dict_count(input) == input_orig {
+  case bots_to_dict_count(input) == input_orig {
     True -> {
       // common.print_robots(input, tile_width, tile_height)
       // common.print_robots(
@@ -82,8 +82,39 @@ fn simulate_loop(
   }
 }
 
+/// Turns a list of robots into a dict of key positions and value list of velocities
+fn bots_to_dict_count(
+  input: List(common.Robot),
+) -> dict.Dict(common.Position, List(common.Position)) {
+  bots_to_dict_count_loop(input, dict.new())
+}
+
+fn bots_to_dict_count_loop(
+  input: List(common.Robot),
+  final: dict.Dict(common.Position, List(common.Position)),
+) -> dict.Dict(common.Position, List(common.Position)) {
+  case input {
+    [first, ..rest] -> {
+      case dict.get(final, first.position) {
+        Ok(val) ->
+          bots_to_dict_count_loop(
+            rest,
+            final
+              |> dict.insert(first.position, list.append(val, [first.velocity])),
+          )
+        Error(_) ->
+          bots_to_dict_count_loop(
+            rest,
+            final |> dict.insert(first.position, [first.velocity]),
+          )
+      }
+    }
+    _ -> final
+  }
+}
+
 fn calculate_entropy(input: List(common.Robot), max: Float) -> Float {
-  let n = int.to_float(dict.size(common.bots_to_dict_count(input)))
+  let n = int.to_float(dict.size(bots_to_dict_count(input)))
   let p_occupied = n /. max
   let p_unoccupied = { max -. n } /. max
 
