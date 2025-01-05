@@ -175,36 +175,6 @@ pub fn bots_to_list2(
   bots_to_list2_loop(input, tile_width, tile_height, 0, 0, [], [])
 }
 
-pub fn bots_to_dict_count(
-  input: List(Robot),
-) -> dict.Dict(Position, List(Position)) {
-  bots_to_dict_count_loop(input, dict.new())
-}
-
-fn bots_to_dict_count_loop(
-  input: List(Robot),
-  final: dict.Dict(Position, List(Position)),
-) -> dict.Dict(Position, List(Position)) {
-  case input {
-    [first, ..rest] -> {
-      case dict.get(final, first.position) {
-        Ok(val) ->
-          bots_to_dict_count_loop(
-            rest,
-            final
-              |> dict.insert(first.position, list.append(val, [first.velocity])),
-          )
-        Error(_) ->
-          bots_to_dict_count_loop(
-            rest,
-            final |> dict.insert(first.position, [first.velocity]),
-          )
-      }
-    }
-    _ -> final
-  }
-}
-
 fn bots_to_list2_loop(
   input: List(Robot),
   tile_width: Int,
@@ -268,5 +238,35 @@ fn bots_to_list2_loop(
           )
       }
     }
+  }
+}
+
+pub fn bots_to_dict_count(
+  input: List(Robot),
+) -> dict.Dict(Position, List(Position)) {
+  bots_to_dict_count_loop(input, dict.new())
+}
+
+fn bots_to_dict_count_loop(
+  input: List(Robot),
+  final: dict.Dict(Position, List(Position)),
+) -> dict.Dict(Position, List(Position)) {
+  case input {
+    [first, ..rest] -> {
+      case dict.get(final, first.position) {
+        Ok(val) ->
+          bots_to_dict_count_loop(
+            rest,
+            final
+              |> dict.insert(first.position, list.append(val, [first.velocity])),
+          )
+        Error(_) ->
+          bots_to_dict_count_loop(
+            rest,
+            final |> dict.insert(first.position, [first.velocity]),
+          )
+      }
+    }
+    _ -> final
   }
 }
