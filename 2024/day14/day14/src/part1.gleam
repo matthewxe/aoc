@@ -5,7 +5,12 @@ import gleam/list
 import gleam/string
 import simplifile
 
-pub fn main() {
+fn main() {
+  part1()
+  part2()
+}
+
+pub fn part1() {
   case argv.load().arguments {
     [filename] -> {
       let input = simplifile.read(filename)
@@ -13,10 +18,27 @@ pub fn main() {
         Ok(text) ->
           calculate(text, 100, 101, 103) |> int.to_string |> io.println
         Error(_error) ->
-          io.println_error("error: wrong filename\nUsage: ./part1 <filename>")
+          io.println_error("error: wrong filename\nUsage: ./day14 <filename>")
       }
     }
-    _ -> io.println("error: wrong argument count\nUsage: ./part1 <filename>")
+    _ ->
+      io.println_error("error: wrong argument count\nUsage: ./day14 <filename>")
+  }
+}
+
+pub fn part2() {
+  case argv.load().arguments {
+    [filename] -> {
+      let input = simplifile.read(filename)
+      case input {
+        Ok(text) ->
+          calculate(text, 100, 101, 103) |> int.to_string |> io.println
+        Error(_error) ->
+          io.println_error("error: wrong filename\nUsage: ./day14 <filename>")
+      }
+    }
+    _ ->
+      io.println_error("error: wrong argument count\nUsage: ./day14 <filename>")
   }
 }
 

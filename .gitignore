@@ -9,3 +9,4 @@ input*
 zig-out
 *.a
 _build
+# 2024/day14/day14/build
