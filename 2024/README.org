@@ -1,6 +1,8 @@
 * Advent of Code 2024
 To be quirky I decided to scramble through a bunch of random programming languages that I want to learn/master and use a different one every day of advent of code.
 
+Small shoutout to nix for making configuration and installation of languages and their tools like 10x faster, I don't think it would have been this frictionless of an experience without it.
+
 The ones ive used
 ** Day 1 - C
 Its something I've used before
