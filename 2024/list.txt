@@ -4,9 +4,7 @@ JavaScript w/ JSDoc
 TypeScript
 PHP
 Java
-Ruby
 Dart
-Swift
 Scala
 Kotlin
 Rust
