@@ -199,7 +199,9 @@ https://github.com/gleam-lang/awesome-gleam
 ** Day 15 - Swift
 This could be interesting. The latest news I have heard about Swift is that the Ladybird project found that Swift fit their needs perfectly for their browser engine, so that gave Swift some good reputation for me that it had a place outside of Apple products.
 ** Day 16 - Ruby
-After dealing with swift development being ass we're onto Ruby! I think this won't be much of a learning experience as I already got Crystal on day 12 and I feel like there wouldn't be much of a difference.
+After dealing with swift development being ass on NixOS, we're onto Ruby! I think this won't be much of a learning experience as I already got Crystal on day 12 and I feel like there wouldn't be much of a difference.
+
+Afterthoughts, I think I love using Ruby more than Python, I kinda group them both as being a easy to understand scripting language and I feel like Ruby does that better than Python. Too bad python got all of the library support and ruby basically only got rails for it. But still I do recommend Ruby for just being a good language overall.
 *** Recommended Resources
 https://www.rubyguides.com
 https://learnxinyminutes.com/ruby
