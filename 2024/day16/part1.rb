@@ -14,59 +14,87 @@ end
 
 # puts(file)
 
-class Reindeer
-  @@move_x = 1
-  @@move_y = 0
-  @@score = 0
+Coordinates = Struct.new(:x, :y)
 
-  def initialize(x, y, map)
-    @x = x
-    @y = y
-    @map = map
-  end
-
-  def step
-    if @map[@y + @@move_y][@x + @@move_x] != "#"
-      @y += @@move_y
-      @x += @@move_x
-      @@score += 1
-    else
-      puts("fuck you")
-    end
-  end
-
-  def clockwise
-    @@move_y *= -1
-    @@move_x, @@move_y = @@move_y, @@move_x
-    @@score += 1000
-  end
-
-  def counter_clockwise
-    @@move_x *= -1
-    @@move_x, @@move_y = @@move_y, @@move_x
-    @@score += 1000
-  end
-end
+# class Reindeer
+#
+#   def initialize(x, y, map)
+#   end
+#
+#   def add_unvisited
+#     move = @@move_coords
+#     (1..4).each do |_|
+#       space = get_relative_space(move.x, move.y)
+#
+#       if space != "#"
+#         @@unvisited << Coordinates.new(@coords.x + move.x, @coords.y + move.y)
+#       end
+#
+#       move.y *= -1
+#       move.x, move.y = move.y, move.x
+#     end
+#   end
+#
+#   def unvisited
+#     return @@unvisited
+#   end
+#
+#   def get_relative_space(x, y)
+#     return @map[@coords.y + y][@coords.x + x]
+#   end
+#
+#   def set(x, y)
+#     @coords.x = x
+#     @coords.y = x
+#   end
+#
+#   def step
+#     if @map[@coords.y + @@move_coords.y][@coords.x + @@move_coords.x] != "#"
+#       @coords.y += @@move_coords.y
+#       @coords.x += @@move_coords.x
+#       @@score += 1
+#     else
+#       puts("fuck you")
+#     end
+#   end
+#
+#   def clocwise
+#     @@move_coords.y *= -1
+#     @@move_coords.x, @@move_coords.y = @@move_coords.y, @@move_coords.x
+#     @@score += 1000
+#   end
+#
+#   def counter_clockwise
+#     @@move_coords.x *= -1
+#     @@move_coords.x, @@move_coords.y = @@move_coords.y, @@move_coords.x
+#     @@score += 1000
+#   end
+# end
 
 map = file.lines.map do |line|
   line.split("")
 end
 
-honse = nil
+direction = Coordinates.new(1, 0)
+unvisited = []
+unvisited_neighbors = Hash.new
+node_scores = Hash.new
+
+current = nil
+end_tile = nil
+
 map.each_with_index do |line, y|
   line.each_with_index do |block, x|
+    coords = Coordinates.new(x, y)
     if block == "S"
-      honse = Reindeer.new(x, y, map)
+      current = coords
+    elsif block == "E"
+      end_tile = coords
+      unvisited << coords
+    else
+      unvisited << coords
     end
   end
 end
 
-honse.step
-honse.step
-honse.step
-honse.clockwise
-honse.clockwise
-honse.step
-honse.step
-honse.step
-honse.step
+node_scores[current] = 0
