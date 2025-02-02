@@ -200,6 +200,9 @@ https://github.com/gleam-lang/awesome-gleam
 This could be interesting. The latest news I have heard about Swift is that the Ladybird project found that Swift fit their needs perfectly for their browser engine, so that gave Swift some good reputation for me that it had a place outside of Apple products.
 ** Day 16 - Ruby
 After dealing with swift development being ass we're onto Ruby! I think this won't be much of a learning experience as I already got Crystal on day 12 and I feel like there wouldn't be much of a difference.
+*** Recommended Resources
+https://www.rubyguides.com
+https://learnxinyminutes.com/ruby
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

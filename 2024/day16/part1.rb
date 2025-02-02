@@ -12,89 +12,115 @@ rescue
   exit(2)
 end
 
-# puts(file)
-
 Coordinates = Struct.new(:x, :y)
-
-# class Reindeer
-#
-#   def initialize(x, y, map)
-#   end
-#
-#   def add_unvisited
-#     move = @@move_coords
-#     (1..4).each do |_|
-#       space = get_relative_space(move.x, move.y)
-#
-#       if space != "#"
-#         @@unvisited << Coordinates.new(@coords.x + move.x, @coords.y + move.y)
-#       end
-#
-#       move.y *= -1
-#       move.x, move.y = move.y, move.x
-#     end
-#   end
-#
-#   def unvisited
-#     return @@unvisited
-#   end
-#
-#   def get_relative_space(x, y)
-#     return @map[@coords.y + y][@coords.x + x]
-#   end
-#
-#   def set(x, y)
-#     @coords.x = x
-#     @coords.y = x
-#   end
-#
-#   def step
-#     if @map[@coords.y + @@move_coords.y][@coords.x + @@move_coords.x] != "#"
-#       @coords.y += @@move_coords.y
-#       @coords.x += @@move_coords.x
-#       @@score += 1
-#     else
-#       puts("fuck you")
-#     end
-#   end
-#
-#   def clocwise
-#     @@move_coords.y *= -1
-#     @@move_coords.x, @@move_coords.y = @@move_coords.y, @@move_coords.x
-#     @@score += 1000
-#   end
-#
-#   def counter_clockwise
-#     @@move_coords.x *= -1
-#     @@move_coords.x, @@move_coords.y = @@move_coords.y, @@move_coords.x
-#     @@score += 1000
-#   end
-# end
 
 map = file.lines.map do |line|
   line.split("")
 end
 
-direction = Coordinates.new(1, 0)
-unvisited = []
-unvisited_neighbors = Hash.new
-node_scores = Hash.new
+class Reindeer
+  @@visited = Set.new
+  @@direction = Hash.new
+  @@queue = Queue.new
+  @@score = Hash.new
+  def initialize(coords, map)
+    @@visited << coords
+    @@queue << coords
+    @@direction[coords] = Coordinates.new(1, 0)
+    @@score[coords] = 0
+    @final_score = nil
+    @map = map
+  end
 
-current = nil
-end_tile = nil
+  def simulate
+    while not @@queue.empty?
+      self.step
+    end
+  end
+
+  def step
+    current = @@queue.pop
+    # puts(current)
+    # puts("visited", @@visited)
+    # puts("queue", @@queue)
+    add_unvisited(current)
+    return current
+  end
+
+  def add_unvisited(current)
+    direction = @@direction[current]
+    directions = [
+      [direction.x, direction.y, 1],
+      [direction.y * -1, direction.x, 1001],
+      [direction.y, direction.x * -1, 1001]
+    ]
+
+    directions.each do |d|
+      space = get_relative_space(current, d[0], d[1])
+      ds = Coordinates.new(d[0], d[1])
+      coords = Coordinates.new(current.x + ds.x, current.y + ds.y)
+      if space != "#" and
+          (not @@visited.include?(coords) or
+          @@score[current] +
+          d[2] < @@score[coords])
+        @@visited << coords
+        @@queue << coords
+        @@direction[coords] = ds
+        @@score[coords] = @@score[current] + d[2]
+      end
+
+      if space == "E"
+        new_final_score = @@score[current] + d[2]
+        if @final_score == nil or
+            new_final_score < @final_score
+          @final_score = new_final_score
+        end
+      end
+    end
+  end
+
+  def get_relative_space(current, x, y)
+    return @map[current.y + y][current.x + x]
+  end
+
+  def set(x, y)
+    @coords.x = x
+    @coords.y = x
+  end
+
+  def final_score
+    return @final_score
+  end
+
+  # def step
+  #   if @map[@coords.y + @@move_coords.y][@coords.x + @@move_coords.x] != "#"
+  #     @coords.y += @@move_coords.y
+  #     @coords.x += @@move_coords.x
+  #     @@score += 1
+  #   else
+  #     puts("fuck you")
+  #   end
+  # end
+  #
+  # def clocwise
+  #   @@move_coords.y *= -1
+  #   @@move_coords.x, @@move_coords.y = @@move_coords.y, @@move_coords.x
+  #   @@score += 1000
+  # end
+  #
+  # def counter_clockwise
+  #   @@move_coords.x *= -1
+  #   @@move_coords.x, @@move_coords.y = @@move_coords.y, @@move_coords.x
+  #   @@score += 1000
+  # end
+end
 
 map.each_with_index do |line, y|
   line.each_with_index do |block, x|
-    coords = Coordinates.new(x, y)
     if block == "S"
-      current = coords
-    elsif block == "E"
-      end_tile = coords
-      unvisited << coords
-    else
-      unvisited << coords
+      honse = Reindeer.new(Coordinates.new(x, y), map)
+      honse.simulate
+      puts(honse.final_score)
     end
   end
 end
-
-node_scores[current] = 0
