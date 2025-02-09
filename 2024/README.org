@@ -205,6 +205,10 @@ Afterthoughts, I think I love using Ruby more than Python, I kinda group them bo
 *** Recommended Resources
 https://www.rubyguides.com
 https://learnxinyminutes.com/ruby
+** Day 17 - Python
+Yeyeyeye
+I have used python a little bit more
+***
 ** My list of languages to randomize in
 - Heavily used languages
   1. C

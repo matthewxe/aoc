@@ -1,5 +1,4 @@
 C++
-Python
 JavaScript w/ JSDoc
 TypeScript
 PHP
