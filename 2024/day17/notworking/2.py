@@ -1,5 +1,4 @@
 import sys
-from math import trunc
 
 if len(sys.argv) != 2:
     print('Incorrect argument\nUSAGE: python 2.py <filename>')
@@ -12,36 +11,22 @@ except OSError:
     exit(1)
 
 
-file = stream.readlines()
-b = int(file[1][12:])
-c = int(file[2][12:])
-instructions = list(map(int, file[4][9:].split(',')))
-instructions_len = len(instructions)
+def simulate(a, b, c, instructions, instructions_len, halt_set):
+    def to_combo(x):
+        match x:
+            case 4:
+                return a
+            case 5:
+                return b
+            case 6:
+                return c
+            case 7:
+                raise 'balls'
+            case _:
+                return x
 
-rev = list(reversed(instructions))
-jumps = [i for i, x in enumerate(instructions) if x == 5]
-
-
-def to_combo(a, b, c, x):
-    match x:
-        case 4:
-            return a
-        case 5:
-            return b
-        case 6:
-            return c
-        case _:
-            return x
-
-
-def reverse_simulate(idx):
-    i = 0
-
-    a = 0
-    b = 0
-    c = 0
-
-    pointer = idx
+    index = 0
+    pointer = 0
 
     while pointer < instructions_len:
         opcode = instructions[pointer]
@@ -50,7 +35,7 @@ def reverse_simulate(idx):
             case 0:
                 # adv
                 combo = to_combo(operand)
-                a = int(a / 2**combo)
+                a = int(a / (2**combo))
             case 1:
                 # bxl
                 b ^= operand
@@ -67,7 +52,8 @@ def reverse_simulate(idx):
                 b ^= c
             case 5:
                 # out
-                == (to_combo(operand) % 8)
+                out.append(to_combo(operand) % 8)
+                # halt_set.add((a, b, c, pointer, tuple(out)))
             case 6:
                 # bdv
                 combo = to_combo(operand)
@@ -77,29 +63,20 @@ def reverse_simulate(idx):
                 combo = to_combo(operand)
                 c = int(a / 2**combo)
         pointer += 2
+    return True
 
-    return 0
 
+file = stream.readlines()
+b = int(file[1][12:])
+c = int(file[2][12:])
+instructions = list(map(int, file[4][9:].split(',')))
 
-print(b)
+i = 0
+halt_set = set()
+while not simulate(i, b, c, instructions, halt_set):
+    i += 1
+    # print(i)
+    # print(sys.maxsize - i)
 
-print(max([reverse_simulate(i) for i in jumps]))
-
-# adv 0 COMBO
-# A = trunc(A / (2**combo))
-# bxl 1 REVERSABLE
-# B = B ^ literal
-# bst 2 COMBO
-# B = combo % 8
-# jnz 3 JUMP
-# if A != 0:
-#     pointer = literal
-# continue
-# bxc 4 REVERSABLE
-# B = B ^ C
-# out 5 COMBO
-# out = combo % 8
-# bdv 6 COMBO
-# B = trunc(A / (2**combo))
-# cdv 7 COMBO
-# C = trunc(A / (2**combo))
+print(i)
+# print(halt_set)
