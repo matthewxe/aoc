@@ -100,8 +100,8 @@ I lost my mind using free pascal so im just gonna skip to using odin
 Odin literally kinda just feels like Go but it's manual memory management so it's fast and slick now 😎
 I'm sure there is more to odin than what I've seen at face value, but at face value it feels like Go and occasionally feels like C. That isn't really a bad thing though, cause I love Go and C.
 *** Recommended Resources
-https://odin-lang.org/docs/overview/
-https://pkg.odin-lang.org/
+1. https://odin-lang.org/docs/overview/
+2. https://pkg.odin-lang.org/
 
 ** Day 9 - Zig
 well i guess im gonna start using the language that Odin is usually compared to, the C killer Zig
@@ -112,11 +112,11 @@ https://github.com/ziglang/zig/issues/5070
 the president of zig adiveses using anonymous blocks, but it looks ugly and at that point why not just add those C style loops? doesn't zig want to replace C, just make it a little easier for us...
 https://github.com/ziglang/zig/issues/5070#issuecomment-617436226
 *** Recommended Resources
-https://zig.guide
-https://ziglang.org/documentation/master/std/
-https://ziglang.org/learn/getting-started/
-https://ziggit.dev
-Google
+1. https://zig.guide
+2. https://ziglang.org/documentation/master/std/
+3. https://ziglang.org/learn/getting-started/
+4. https://ziggit.dev
+5. Google
 
 ** Day 10 - OCaml
 my first thing thinking about ocaml is that its anohetr functional programming language but apparently its actually a dialect of ML which is interesting and i havent added ML to the list and i would like to add ML but people dont really use that in production anyway and OCaml has been used to bootstrap rust so i trust that its very production ready
@@ -125,8 +125,8 @@ OCaml was alot of fun, probably because I got a little bit of some functional pr
 But one thing struck me that this is very different from lisp! It is statically typed instead of dynamically typed. The very common realization of this is to add floats together you have to use +. instead of + and if you want to you have to do type conversion first.
 Also a new thing that I discovered is pattern matching. I'll be honest I still have NO clue how it works but i managed to make it play along with my horrible code and it worked.
 *** Recommended resources
-https://ocaml.org/docs
-https://ocaml.org/api
+1. https://ocaml.org/docs
+2. https://ocaml.org/api
 
 ** Day 11 - Bash!?
 Well this is fun
@@ -160,9 +160,9 @@ it has good documentation too actually, better than most
 
 its current biggest bhweakness is the lack of an LSP (thats good cause crystalline boke on me), but im sure the vscode extension works fine there (i use neovim btw)
 *** Recommended Resources
-https://crystal-lang.org/
-https://crystal-lang.org/api
-https://crystal-lang.org/reference
+1. https://crystal-lang.org/
+2. https://crystal-lang.org/api
+3. https://crystal-lang.org/reference
 
 ** Day 13 - Perl
 a lil [[https://www.reddit.com/r/linux/comments/f8yep4/comment/fiohcp9/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button][comment]] showed me like the hierarchy of programming languages for solving problems (in a \*nix system)
@@ -179,9 +179,9 @@ perls a little silly with the arguments to subroutines and the usage of "magic v
 
 my main problem was the actual aoooc problem itself where i have never learnt how to do the math topic needed to solve it. but when i got a hint on what i needed to learn, after learning it it was extremely easy to implement in perl so i like perl for scripting, big thumbs up, but i would probably rather use python when i need to make a script just because there is a good chance the person im talking to knows python and i can share my script with them very easily
 *** Recommended Resources
-https://www.perl.org/learn.html
-https://www.perltutorial.org/
-google
+1. https://www.perl.org/learn.html
+2. https://www.perltutorial.org/
+3. google
 ** Day 14 - Gleam
 I saw some youtube videos about this but I haven't really looked into that much so its fresh to me.
 
@@ -192,10 +192,10 @@ Its LSP error messages are incredibly user friendly
 Probably the most fun and easy to use programming language so far, crystal could have been here if it had a good LSP...
 Okay I loved the puzzle, (I had to take a hint on what to do though cause I literally had no idea on what I could have done). But Gleam really made it seamless. It is very nice to use. The LSP is amazing, and it does what I liked about OCaml but as smooth as an experience like Crystal (despite crystal not having an LSP). And also the package system is pretty frictionless.
 *** Recommended Resources
-https://gleam.run/writing-gleam/
-https://tour.gleam.run
-https://hexdocs.pm/gleam_stdlib/gleam
-https://github.com/gleam-lang/awesome-gleam
+1. https://gleam.run/writing-gleam/
+2. https://tour.gleam.run
+3. https://hexdocs.pm/gleam_stdlib/gleam
+4. https://github.com/gleam-lang/awesome-gleam
 ** Day 15 - Swift
 This could be interesting. The latest news I have heard about Swift is that the Ladybird project found that Swift fit their needs perfectly for their browser engine, so that gave Swift some good reputation for me that it had a place outside of Apple products.
 ** Day 16 - Ruby
@@ -203,8 +203,8 @@ After dealing with swift development being ass on NixOS, we're onto Ruby! I thin
 
 Afterthoughts, I think I love using Ruby more than Python, I kinda group them both as being a easy to understand scripting language and I feel like Ruby does that better than Python. Too bad python got all of the library support and ruby basically only got rails for it. But still I do recommend Ruby for just being a good language overall.
 *** Recommended Resources
-https://www.rubyguides.com
-https://learnxinyminutes.com/ruby
+1. https://www.rubyguides.com
+2. https://learnxinyminutes.com/ruby
 ** Day 17 - Python
 Yeyeyeye
 I have used python a little bit more
